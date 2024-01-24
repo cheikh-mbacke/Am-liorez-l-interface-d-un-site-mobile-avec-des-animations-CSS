@@ -11,7 +11,10 @@ body {
     max-width: 768px;
     box-sizing: border-box;
 }
-a {text-decoration: none;}
+
+a {
+    text-decoration: none;
+}
 
 .header {
     display: flex;
@@ -79,6 +82,7 @@ a {text-decoration: none;}
         font-weight: 500;
     }
 }
+
 .section_title {
     font-size: 24px;
     font-weight: 700;
@@ -87,9 +91,10 @@ a {text-decoration: none;}
 
 .functioning {
     width: 100%;
-    
-    &_number {  padding: 5px 10px;
-     font-size: 13px;
+
+    &_number {
+        padding: 5px 10px;
+        font-size: 13px;
         border: solid 1.5px #9356DC;
         border-radius: 50%;
         background-color: #9356DC;
@@ -98,13 +103,13 @@ a {text-decoration: none;}
         display: flex;
         margin-top: 25px;
     }
-   
+
     &_button {
         display: flex;
         flex-direction: column;
         padding: 10px 20px 10px 20px;
         justify-content: center;
-       
+
     }
 
     &_btn {
@@ -136,51 +141,101 @@ a {text-decoration: none;}
 }
 
 .cards_restaurant {
-    background-color: #F6F6F6;}
-    .card { border-radius: 15px;
-    background-color: white;
-width: 90%;
-display: flex;
-flex-direction: column;
-margin-left: 20px;
-margin-bottom: 20px;
-position: relative;
+    background-color: #F6F6F6;
+}
 
-.btn_new { width:80px ;
-    height: 30px;
-background-color: #99E2D0;
-position: absolute;
-margin-left: 250px;
-margin-top: 10px;
-border: none;
-border-radius: 2px;
-}
-.btn_txt {color: #008766;
-    font-size: 14px;
-margin-top:3px;
-}
-&_img {
-   width: 100%;
-   border-top-left-radius: 15px;
-   border-top-right-radius: 15px; 
-   height: 200px;
-   object-fit: cover;
-}
-&_content{color: black;
-  display: flex;
-justify-content: space-between;
-padding: 10px;
-}
-&_txt {
-    h4, p {
-      margin: 5px;
-      
+.card {
+    border-radius: 15px;
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    .btn_new {
+        width: 80px;
+        height: 30px;
+        background-color: #99E2D0;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 2px;
     }
-  }
-  &_title { font-weight: bold;
-font-size: 18px;}
-&_subtitle { font-size: 17px;}
-.heart {padding-top: 15px;
-font-size: 20px;
-padding-right: 10px;}
+
+    .btn_txt {
+        color: #008766;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    &_img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &_content {
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    &_txt {
+
+        h4,
+        p {
+            margin: 5px;
+
+        }
+    }
+
+    &_title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &_subtitle {
+        font-size: 17px;
+    }
+
+    .heart {
+        padding-top: 15px;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+}
+
+.footer {
+    background-color: #353535;
+    height: 160px;
+    padding: 22px 25px 22px 25px;
+
+    &_logo {
+        font-size: 18px;
+        color: white;
+        font-family: 'shrikhand';
+        font-weight: 500;
+    }
+
+    &_list {
+        list-style: none;
+        color: white;
+        font-size: 16px;
+        padding-left: 0;
+    }
+
+    .element_list {
+        padding-bottom: 10px;
+    }
+
+    &_icon {
+        margin-right: 10px;
+    }
+
 }
