@@ -1,5 +1,51 @@
 @import "utils";
 
+/*Loader*/
+@keyframes loaderIcon{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% { transform: rotate(360deg); opacity: 0;;}
+}
+@keyframes loader{
+    0% {
+       opacity: 1;
+    }
+    50% {opacity: 1;}
+    100% { opacity: 0;}
+}
+
+.loader {background-color: $main_color;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+animation: loader 3s both ;
+z-index: 1;
+
+
+
+&_icon{
+    animation: loaderIcon 3s linear both ;
+font-size: 50px;
+color: $second_color;
+display: flex;
+margin-left: 45%;
+margin-top: 50%;
+position: absolute;
+}
+
+&_logo {  font-size: 50px;
+    color: white;
+    font-family: 'shrikhand';
+    font-weight: 500;
+  margin-left: 15%;
+  margin-top: 60%;
+    display: flex;
+    padding-top: 20px;
+}}
+
+
 body {
     margin: 0;
     width: 100%;
@@ -81,8 +127,9 @@ a {
     }
    
     &_btn:hover{
-
-   cursor: pointer;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        cursor: pointer;
 }
     .btn_p {
         color: white;
@@ -168,7 +215,7 @@ a {
     .btn_new {
         width: 80px;
         height: 30px;
-        background-color: tertiary-color;
+        background-color: $tertiary-color;
         position: absolute;
         margin-left: 250px;
         margin-top: 10px;
@@ -215,15 +262,27 @@ a {
         font-size: 17px;
     }}
 
+@keyframes heartColor {
+    0% { opacity: 0;
+   }
+100%{
+     opacity: 1;
+    
+}
+}
+
+
+
+
     .heart {
         padding-top: 15px;
         font-size: 25px;
         padding-right: 30px;
         position: relative;
     
+
 .fa-regular.fa-heart{
     opacity: 0.5;
-    transition: opacity 0.3s ease;
     position: absolute;
 }
 &:hover .fa-regular.fa-heart{
@@ -237,11 +296,12 @@ a {
     position: absolute;
     visibility: hidden;
    opacity: 0;
-   transition: opacity 0.3s ease;
+  
 }
 &:hover .fa-solid.fa-heart.heartFilled{
     visibility: visible;
     opacity: 1;
+    animation: heartColor 0.5s ease backwards;
 }
 }
 
