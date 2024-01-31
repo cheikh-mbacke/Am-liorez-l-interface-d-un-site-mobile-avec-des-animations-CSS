@@ -204,6 +204,7 @@ a {
     padding-top: 20px;
 }
 
+
 .card {
     border-radius: 15px;
     background-color: white;
@@ -213,6 +214,7 @@ a {
     margin-left: 20px;
     margin-bottom: 20px;
     position: relative;
+    cursor: pointer;
 
     .btn_new {
         width: 80px;
@@ -299,7 +301,9 @@ a {
         padding-top: 15px;
         font-size: 25px;
         padding-right: 30px;
-        position: relative;}
+        position: relative;
+        cursor: pointer;
+    }
     
        
 
@@ -307,6 +311,7 @@ a {
 .fa-regular.fa-heart{
     opacity: 0.5;
     position: absolute;
+   
 }
 
 .fa-solid.fa-heart.heartFilled{
@@ -317,6 +322,7 @@ a {
     position: absolute;
     visibility: hidden;
    opacity: 0;
+   
   
 }
 

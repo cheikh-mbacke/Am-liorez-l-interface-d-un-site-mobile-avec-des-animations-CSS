@@ -194,6 +194,7 @@ a {
   margin-left: 20px;
   margin-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
 .card .btn_new {
   width: 80px;
@@ -274,6 +275,7 @@ a {
   font-size: 25px;
   padding-right: 30px;
   position: relative;
+  cursor: pointer;
 }
 
 .fa-regular.fa-heart {
