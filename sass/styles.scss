@@ -1,7 +1,7 @@
 @import "utils";
 
 /*Loader*/
-@keyframes loaderIcon{
+@keyframes loaderSpinner{
     0% {
         transform: rotate(0deg);
     }
@@ -17,7 +17,7 @@
     visibility: hidden;}
 }
 
-.loader {background-color: $main_color;
+.loader { background: linear-gradient(193.33deg, #{$main_color} -11.44%, #{$second_color} 123.93%);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -25,27 +25,38 @@
 animation: loader 3s both ;
 z-index: 1;
 &_content {
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     position: absolute;
 }
+&_spinner {
+    animation: loaderSpinner 3s linear both ;
+    position: absolute;
+    margin-left: 35%;
+margin-top: 40%;
+font-size: 120px;
+color: white;
+}
 
 &_icon{
-    animation: loaderIcon 3s linear both ;
+    
 color: $second_color;
 margin-left: 45%;
 margin-top: 50%;
-
 }
+
 
 &_logo {  
     color: white;
     font-family: 'shrikhand';
     font-weight: 500;
-  margin-left: 15%;
-  margin-top: 60%;
+  margin-left: 20%;
+  margin-top: 70%;
     padding-top: 20px;
-}}
+}
+
+
+}
 
 /*main-container*/
 body {
