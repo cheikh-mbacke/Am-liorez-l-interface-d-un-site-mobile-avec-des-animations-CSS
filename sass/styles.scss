@@ -70,6 +70,10 @@ body {
     width: 100%;
     max-width: 768px;
     box-sizing: border-box;
+    @media (min-width:768px)and (max-width:1440px) {
+       min-width: 768px;
+        max-width: 1440px;
+    }
 }
 
 a {
@@ -86,6 +90,9 @@ a {
 
     &_logo {
         width: 50%;
+        @media (min-width:768px)and (max-width:1440px) {
+          width: 20%;
+        }
     }
 }
 
@@ -136,6 +143,9 @@ a {
         border: none;
         width: 50%;
         box-shadow: 0px 4px 10px 0px $shadow-color-header;
+        @media (min-width:768px)and (max-width:1440px) {
+         width: 15%;
+        }
       
     }
    
@@ -170,6 +180,9 @@ a {
         position: absolute;
         display: flex;
         margin-top: 25px;
+        @media (min-width:768px)and (max-width:1440px) {
+          display: inline;
+        }
     }
 
     &_button {
@@ -178,6 +191,11 @@ a {
         padding: 10px 20px 10px 20px;
         justify-content: center;
         margin-bottom: 50px;
+        @media (min-width:768px)and (max-width:1440px) {
+            flex-direction: row;
+          text-align: center;
+          width: 100%;
+        }
     }
 
     &_btn {
@@ -189,6 +207,9 @@ a {
         width: 100%;
         margin-left: 10px;
         box-shadow: 0px 4px 15px 0px #00000026;
+        @media (min-width:768px)and (max-width:1440px) {
+            width: auto;
+        }
     }
 
     &_p {
@@ -213,6 +234,7 @@ a {
 .cards_restaurant {
     background-color: #F6F6F6;
     padding-top: 20px;
+    
 }
 
 
@@ -226,6 +248,10 @@ a {
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
+    @media (min-width:768px)and (max-width:1440px) {
+        
+        width: 40%;
+     }
 
     .btn_new {
         width: 80px;

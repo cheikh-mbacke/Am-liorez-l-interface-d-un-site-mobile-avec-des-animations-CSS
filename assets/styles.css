@@ -68,6 +68,12 @@ body {
   max-width: 768px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .main-container {
+    min-width: 768px;
+    max-width: 1440px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -82,6 +88,11 @@ a {
 }
 .header_logo {
   width: 50%;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .header_logo {
+    width: 20%;
+  }
 }
 
 /*navbar*/
@@ -123,6 +134,11 @@ a {
   width: 50%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .navbar_btn {
+    width: 15%;
+  }
+}
 .navbar_btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -154,12 +170,24 @@ a {
   display: flex;
   margin-top: 25px;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .functioning_number {
+    display: inline;
+  }
+}
 .functioning_button {
   display: flex;
   flex-direction: column;
   padding: 10px 20px 10px 20px;
   justify-content: center;
   margin-bottom: 50px;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .functioning_button {
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+  }
 }
 .functioning_btn {
   margin-bottom: 10px;
@@ -170,6 +198,11 @@ a {
   width: 100%;
   margin-left: 10px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .functioning_btn {
+    width: auto;
+  }
 }
 .functioning_p {
   font-weight: 500;
@@ -202,6 +235,11 @@ a {
   margin-bottom: 20px;
   position: relative;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .card {
+    width: 40%;
+  }
 }
 .card .btn_new {
   width: 80px;
