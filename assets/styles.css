@@ -17,6 +17,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 .loader {
@@ -28,26 +29,27 @@
   animation: loader 3s both;
   z-index: 1;
 }
-.loader_icon {
-  animation: loaderIcon 3s linear both;
+.loader_content {
   font-size: 50px;
-  color: #FF79DA;
   display: flex;
-  margin-left: 45%;
-  margin-top: 50%;
   position: absolute;
 }
+.loader_icon {
+  animation: loaderIcon 3s linear both;
+  color: #FF79DA;
+  margin-left: 45%;
+  margin-top: 50%;
+}
 .loader_logo {
-  font-size: 50px;
   color: white;
   font-family: "shrikhand";
   font-weight: 500;
   margin-left: 15%;
   margin-top: 60%;
-  display: flex;
   padding-top: 20px;
 }
 
+/*main-container*/
 body {
   margin: 0;
   width: 100%;
@@ -241,20 +243,45 @@ a {
     opacity: 1;
   }
 }
-.heart {
+@keyframes emptyHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card .hidden-checkbox:checked + .heart-label .fa-regular.fa-heart {
+  opacity: 0;
+}
+.card .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled {
+  visibility: visible;
+  opacity: 1;
+  animation: heartColor 1s ease;
+}
+.card .hidden-checkbox:not(:checked) + .heart-label {
+  opacity: 1;
+  animation: emptyHeart 1s ease;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.heart-label {
   padding-top: 15px;
   font-size: 25px;
   padding-right: 30px;
   position: relative;
 }
-.heart .fa-regular.fa-heart {
+
+.fa-regular.fa-heart {
   opacity: 0.5;
   position: absolute;
 }
-.heart:hover .fa-regular.fa-heart {
-  opacity: 0;
-}
-.heart .fa-solid.fa-heart.heartFilled {
+
+.fa-solid.fa-heart.heartFilled {
   color: transparent;
   background: linear-gradient(180deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
@@ -262,11 +289,6 @@ a {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-}
-.heart:hover .fa-solid.fa-heart.heartFilled {
-  visibility: visible;
-  opacity: 1;
-  animation: heartColor 0.5s ease backwards;
 }
 
 /* footer */

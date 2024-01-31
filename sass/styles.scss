@@ -5,14 +5,16 @@
     0% {
         transform: rotate(0deg);
     }
-    100% { transform: rotate(360deg); opacity: 0;;}
+    100% { transform: rotate(360deg); opacity: 0;}
+    
 }
 @keyframes loader{
     0% {
        opacity: 1;
     }
     50% {opacity: 1;}
-    100% { opacity: 0;}
+    100% { opacity: 0;
+    visibility: hidden;}
 }
 
 .loader {background-color: $main_color;
@@ -22,30 +24,30 @@
     display: flex;
 animation: loader 3s both ;
 z-index: 1;
-
-
+&_content {
+    font-size: 50px;
+    display: flex;
+    position: absolute;
+}
 
 &_icon{
     animation: loaderIcon 3s linear both ;
-font-size: 50px;
 color: $second_color;
-display: flex;
 margin-left: 45%;
 margin-top: 50%;
-position: absolute;
+
 }
 
-&_logo {  font-size: 50px;
+&_logo {  
     color: white;
     font-family: 'shrikhand';
     font-weight: 500;
   margin-left: 15%;
   margin-top: 60%;
-    display: flex;
     padding-top: 20px;
 }}
 
-
+/*main-container*/
 body {
     margin: 0;
     width: 100%;
@@ -270,24 +272,43 @@ a {
     
 }
 }
+@keyframes emptyHeart {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+ .card {
+        .hidden-checkbox:checked+ .heart-label .fa-regular.fa-heart{
+            opacity: 0;
+        }
+        .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled{
+            visibility: visible;
+            opacity: 1;
+            animation: heartColor 1s ease;
+        }
+        .hidden-checkbox:not(:checked) + .heart-label{
+            opacity: 1;
+            animation: emptyHeart 1s ease;
+        }
+  }
+.hidden-checkbox {
+    position: absolute;
+    left: -9999px;
+}
 
-
-
-
-    .heart {
+    .heart-label {
         padding-top: 15px;
         font-size: 25px;
         padding-right: 30px;
-        position: relative;
+        position: relative;}
     
+       
+
 
 .fa-regular.fa-heart{
     opacity: 0.5;
     position: absolute;
 }
-&:hover .fa-regular.fa-heart{
-    opacity: 0;
-}
+
 .fa-solid.fa-heart.heartFilled{
     color: transparent;
     background: linear-gradient(180deg, #{$main_color} -11.44%, #{$second_color} 123.93%);
@@ -298,12 +319,9 @@ a {
    opacity: 0;
   
 }
-&:hover .fa-solid.fa-heart.heartFilled{
-    visibility: visible;
-    opacity: 1;
-    animation: heartColor 0.5s ease backwards;
-}
-}
+
+
+
 
 
 /* footer */
