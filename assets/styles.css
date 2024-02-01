@@ -154,6 +154,11 @@ a {
   font-weight: 700;
   padding-left: 20px;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .section_title {
+    padding-left: 110px;
+  }
+}
 
 /*functioning section*/
 .functioning {
@@ -224,6 +229,19 @@ a {
   background-color: #F6F6F6;
   padding-top: 20px;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .cards_restaurant {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .restaurant_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .card {
   border-radius: 15px;
@@ -238,6 +256,7 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .card {
+    margin: 20px;
     width: 40%;
   }
 }
@@ -350,14 +369,31 @@ a {
   font-family: "shrikhand";
   font-weight: 500;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .footer_logo {
+    display: flex;
+  }
+}
 .footer_list {
   list-style: none;
   color: white;
   font-size: 16px;
   padding-left: 0;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .footer_list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+  }
+}
 .footer .element_list {
   padding-bottom: 10px;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .footer .element_list {
+    margin: 20px;
+  }
 }
 .footer_icon {
   margin-right: 15px;
