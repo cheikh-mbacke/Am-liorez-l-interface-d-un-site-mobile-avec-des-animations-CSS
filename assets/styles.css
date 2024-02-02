@@ -120,6 +120,11 @@ a {
   height: 68px;
   padding-top: 30px;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .navbar .first_title {
+    font-size: 40px;
+  }
+}
 .navbar .second_title {
   font-size: 18px;
   color: #353535;
@@ -156,7 +161,8 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .section_title {
-    padding-left: 110px;
+    padding-left: 150px;
+    margin-bottom: 10px;
   }
 }
 
@@ -165,7 +171,7 @@ a {
   width: 100%;
 }
 .functioning_number {
-  padding: 5px 10px;
+  padding: 6px 10px;
   font-size: 13px;
   border: solid 1.5px #9356DC;
   border-radius: 50%;
@@ -178,6 +184,7 @@ a {
 @media (min-width: 768px) and (max-width: 1440px) {
   .functioning_number {
     display: inline;
+    margin-left: 20px;
   }
 }
 .functioning_button {
@@ -190,8 +197,8 @@ a {
 @media (min-width: 768px) and (max-width: 1440px) {
   .functioning_button {
     flex-direction: row;
-    text-align: center;
-    width: 100%;
+    justify-content: flex-start;
+    padding-left: 130px;
   }
 }
 .functioning_btn {
@@ -206,7 +213,9 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .functioning_btn {
-    width: auto;
+    width: 322px;
+    margin-left: 30px;
+    margin-right: 20px;
   }
 }
 .functioning_p {
@@ -231,7 +240,7 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .cards_restaurant {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -240,6 +249,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 20px;
   }
 }
 
@@ -257,7 +267,10 @@ a {
 @media (min-width: 768px) and (max-width: 1440px) {
   .card {
     margin: 20px;
-    width: 40%;
+    width: 35%;
+    margin-left: 40px;
+    margin-right: 70px;
+    height: 280px;
   }
 }
 .card .btn_new {
@@ -269,6 +282,11 @@ a {
   margin-top: 10px;
   border: none;
   border-radius: 2px;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .card .btn_new {
+    margin-left: 400px;
+  }
 }
 .card .btn_txt {
   color: #008766;
@@ -363,6 +381,12 @@ a {
   height: 160px;
   padding: 22px 25px 22px 25px;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .footer {
+    height: 125px;
+    padding-bottom: 0;
+  }
+}
 .footer_logo {
   font-size: 18px;
   color: white;
@@ -371,7 +395,9 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .footer_logo {
-    display: flex;
+    position: absolute;
+    margin-left: 88%;
+    padding-top: 50px;
   }
 }
 .footer_list {
@@ -384,7 +410,9 @@ a {
   .footer_list {
     display: flex;
     flex-direction: row;
-    padding-top: 60px;
+    padding-top: 20px;
+    justify-content: flex-end;
+    padding-right: 170px;
   }
 }
 .footer .element_list {

@@ -126,6 +126,9 @@ a {
         font-weight: 700;
         height: 68px;
         padding-top: 30px;
+        @media (min-width:768px)and (max-width:1440px) {
+           font-size: 40px;
+           }
     }
 
     .second_title {
@@ -165,7 +168,8 @@ a {
     font-weight: 700;
     padding-left: 20px;
     @media (min-width:768px)and (max-width:1440px) {
-        padding-left:110px ;
+        padding-left:150px ;
+        margin-bottom: 10px;
       }
 }
 
@@ -174,7 +178,7 @@ a {
     width: 100%;
 
     &_number {
-        padding: 5px 10px;
+        padding: 6px 10px;
         font-size: 13px;
         border: solid 1.5px $main_color;
         border-radius: 50%;
@@ -185,6 +189,7 @@ a {
         margin-top: 25px;
         @media (min-width:768px)and (max-width:1440px) {
           display: inline;
+          margin-left: 20px;
         }
     }
 
@@ -196,8 +201,8 @@ a {
         margin-bottom: 50px;
         @media (min-width:768px)and (max-width:1440px) {
             flex-direction: row;
-          text-align: center;
-          width: 100%;
+          justify-content: flex-start;
+          padding-left: 130px;
         }
     }
 
@@ -211,7 +216,9 @@ a {
         margin-left: 10px;
         box-shadow: 0px 4px 15px 0px #00000026;
         @media (min-width:768px)and (max-width:1440px) {
-            width: auto;
+            width: 322px;
+            margin-left: 30px;
+            margin-right: 20px;
         }
     }
 
@@ -238,7 +245,7 @@ a {
     background-color: #F6F6F6;
     padding-top: 20px;
     @media (min-width:768px)and (max-width:1440px) {
-        width: 90%;
+        width: 100%;
     }
     
 }
@@ -246,6 +253,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 20px;
 }}
 
 
@@ -261,7 +269,10 @@ a {
     cursor: pointer;
     @media (min-width:768px)and (max-width:1440px) {
         margin: 20px;
-        width: 40%;
+        width: 35%;
+        margin-left: 40px;
+        margin-right: 70px;
+        height: 280px;
      }
 
     .btn_new {
@@ -273,6 +284,9 @@ a {
         margin-top: 10px;
         border: none;
         border-radius: 2px;
+        @media (min-width:768px)and (max-width:1440px) {
+           margin-left: 400px;
+           }
     }
 
     .btn_txt {
@@ -397,7 +411,10 @@ a {
     background-color: #353535;
     height: 160px;
     padding: 22px 25px 22px 25px;
-   
+    @media (min-width:768px)and (max-width:1440px) {
+        height: 125px;
+        padding-bottom: 0;
+       }
   
     &_logo {
         font-size: 18px;
@@ -405,7 +422,9 @@ a {
         font-family: 'shrikhand';
         font-weight: 500;
         @media (min-width:768px)and (max-width:1440px) {
-            display: flex;
+            position: absolute;
+            margin-left: 88%;
+            padding-top: 50px;
       
                 
           }
@@ -419,8 +438,9 @@ a {
         @media (min-width:768px)and (max-width:1440px) {
             display: flex;
             flex-direction: row;
-           padding-top: 60px;
-      
+           padding-top: 20px;
+      justify-content: flex-end;
+      padding-right: 170px;
        
           }
     }
