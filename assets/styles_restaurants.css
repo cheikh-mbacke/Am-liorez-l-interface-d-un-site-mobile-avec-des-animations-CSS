@@ -41,12 +41,6 @@ body {
 /*restaurant name*/
 .restaurant {
   display: flex;
-  /*&_heart {
-      font-size:30px ;
-  padding-left: 30px;
-     padding-top: 20px;
-     opacity: 0.8;
-   }*/
 }
 .restaurant_name {
   padding-left: 20px;
@@ -114,7 +108,33 @@ body {
 }
 
 /*main --> menu*/
-/*starters */
+/*menu animation*/
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dish {
+  opacity: 0;
+}
+
+.dish.animated {
+  animation: menu 1.5s ease forwards;
+}
+
+.dish.animated2 {
+  animation: menu 2s ease forwards;
+}
+
+.dish.animated3 {
+  animation: menu 3s ease forwards;
+}
+
 .menu {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
@@ -122,46 +142,7 @@ body {
   position: relative;
   width: 100%;
   margin-top: 210px;
-  /*
-   .dish {
-       &_btn {
-           position: relative;
-           overflow: hidden; 
-           background-color: white;
-           transition: background-color 0.3s ease;
-       }
-
-
-       .progress {
-           position: absolute;
-           top: 0;
-           right: 0; 
-           bottom: 0;
-           width: 0;
-           background-color: $tertiary-color;
-           z-index: 1;
-           transition: width 0.5s ease;
-       }
-
-       &_btn:focus {
-           background-color: white;
-           .progress {
-               width: calc(100% / 6);
-           }
-           .dish_price {
-               transform: translateX(-150%); 
-               transition: transform 0.5s ease;
-               z-index: 5; 
-           }
-
-       }
-       .logo {
-           color: white;
-
-            border: none;
-          font-size: 30px;
-          margin-top: 20px;
-           }*/
+  /*animation to the right of the dishes*/
 }
 .menu_section {
   font-size: 16px;
@@ -261,7 +242,7 @@ body {
     width: 0%;
   }
   100% {
-    width: 15%;
+    width: 18%;
   }
 }
 @keyframes price {
