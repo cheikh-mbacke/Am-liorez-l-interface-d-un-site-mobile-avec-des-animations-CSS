@@ -122,6 +122,46 @@ body {
   position: relative;
   width: 100%;
   margin-top: 210px;
+  /*
+   .dish {
+       &_btn {
+           position: relative;
+           overflow: hidden; 
+           background-color: white;
+           transition: background-color 0.3s ease;
+       }
+
+
+       .progress {
+           position: absolute;
+           top: 0;
+           right: 0; 
+           bottom: 0;
+           width: 0;
+           background-color: $tertiary-color;
+           z-index: 1;
+           transition: width 0.5s ease;
+       }
+
+       &_btn:focus {
+           background-color: white;
+           .progress {
+               width: calc(100% / 6);
+           }
+           .dish_price {
+               transform: translateX(-150%); 
+               transition: transform 0.5s ease;
+               z-index: 5; 
+           }
+
+       }
+       .logo {
+           color: white;
+
+            border: none;
+          font-size: 30px;
+          margin-top: 20px;
+           }*/
 }
 .menu_section {
   font-size: 16px;
@@ -151,6 +191,9 @@ body {
   border: none;
   width: 100%;
   padding-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -172,12 +215,62 @@ body {
   font-weight: 300;
   text-align: left;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .dish_price {
   float: right;
   font-size: 15px;
   color: #353535;
   padding-right: 10px;
+  /*margin-top: -20px;*/
+}
+.menu .dish_btn {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.menu .dish .progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #99E2D0;
+  z-index: 1;
+}
+.menu .dish .logo {
+  color: white;
+  border: none;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.menu .dish_btn:focus {
+  background-color: white;
+}
+.menu .dish_btn:focus .progress {
+  animation: progress 0.5s ease both;
+}
+.menu .dish_btn:focus .dish_price {
+  animation: price 0.5s ease both;
+  z-index: 5;
+}
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
 }
 .menu .order {
   border-radius: 25px;

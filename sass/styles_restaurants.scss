@@ -174,16 +174,18 @@ width: 10%;}
         border: none;
         width: 100%;
         padding-left: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
        
         box-shadow: 0px 4px 15px 0px #00000026;
         @media (min-width:1024px)and (max-width:1440px) {
             width: 322px;
             margin-left: 30px;
             margin-right: 20px;
-        }
-        
-    }
+        }}
 
+  
     &_title {
         font-weight: bold;
         font-family: 'Roboto';
@@ -198,16 +200,112 @@ width: 10%;}
         font-weight: 300;
         text-align: left;
         margin: 0;
+      overflow: hidden;
+     text-overflow: ellipsis;
+      white-space: nowrap;
+         
+        
     }
     &_price {
       float: right;
       font-size: 15px;
     color: #353535;
     padding-right: 10px;
+    /*margin-top: -20px;*/
     
    
-    }
+    }}
 
+   /*
+    .dish {
+        &_btn {
+            position: relative;
+            overflow: hidden; 
+            background-color: white;
+            transition: background-color 0.3s ease;
+        }
+    
+   
+        .progress {
+            position: absolute;
+            top: 0;
+            right: 0; 
+            bottom: 0;
+            width: 0;
+            background-color: $tertiary-color;
+            z-index: 1;
+            transition: width 0.5s ease;
+        }
+
+        &_btn:focus {
+            background-color: white;
+            .progress {
+                width: calc(100% / 6);
+            }
+            .dish_price {
+                transform: translateX(-150%); 
+                transition: transform 0.5s ease;
+                z-index: 5; 
+            }
+         
+        }
+        .logo {
+            color: white;
+             
+             border: none;
+           font-size: 30px;
+           margin-top: 20px;
+            }*/
+
+            .dish {
+                &_btn {
+                    position: relative;
+                    overflow: hidden; 
+                    background-color: white;
+                   
+                }
+            
+
+            .progress {
+                position: absolute;
+                top: 0;
+                right: 0; 
+                bottom: 0;
+                width: 0;
+                background-color: $tertiary-color;
+                z-index: 1;
+                
+            }
+    
+            .logo {
+                color: white;
+                 
+                 border: none;
+               font-size: 30px;
+               margin-top: 20px;
+                }
+                &_btn:focus {
+                    background-color: white;
+                    .progress {
+                        
+                        animation: progress 0.5s ease both;
+                    }
+                    .dish_price {
+                       animation: price 0.5s ease both;
+                        
+                        z-index: 5; 
+                    }
+                 
+                }
+
+}
+@keyframes progress {
+0% { width: 0%;}
+100% {width: 15%;}
+}
+@keyframes price { 
+    0% {   transform: translateX(0); }
+    100% {   transform: translateX(-150%); }
 }
 .order {
         
