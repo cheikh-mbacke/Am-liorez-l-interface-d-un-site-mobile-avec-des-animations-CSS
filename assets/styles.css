@@ -68,9 +68,9 @@ body {
   max-width: 768px;
   box-sizing: border-box;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .main-container {
-    min-width: 768px;
+    min-width: 1024px;
     max-width: 1440px;
   }
 }
@@ -161,7 +161,7 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .section_title {
-    padding-left: 150px;
+    padding-left: 10%;
     margin-bottom: 10px;
   }
 }
@@ -181,7 +181,7 @@ a {
   display: flex;
   margin-top: 25px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .functioning_number {
     display: inline;
     margin-left: 20px;
@@ -194,11 +194,12 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .functioning_button {
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 130px;
+    display: flex;
   }
 }
 .functioning_btn {
@@ -211,7 +212,7 @@ a {
   margin-left: 10px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .functioning_btn {
     width: 322px;
     margin-left: 30px;
@@ -244,7 +245,7 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .restaurant_card {
     display: flex;
     flex-wrap: wrap;
@@ -264,7 +265,7 @@ a {
   position: relative;
   cursor: pointer;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .card {
     margin: 20px;
     width: 35%;
@@ -283,7 +284,7 @@ a {
   border: none;
   border-radius: 2px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .card .btn_new {
     margin-left: 400px;
   }
@@ -381,7 +382,7 @@ a {
   height: 160px;
   padding: 22px 25px 22px 25px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .footer {
     height: 125px;
     padding-bottom: 0;
@@ -393,7 +394,7 @@ a {
   font-family: "shrikhand";
   font-weight: 500;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .footer_logo {
     position: absolute;
     margin-left: 88%;
@@ -406,7 +407,7 @@ a {
   font-size: 16px;
   padding-left: 0;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .footer_list {
     display: flex;
     flex-direction: row;
@@ -418,7 +419,7 @@ a {
 .footer .element_list {
   padding-bottom: 10px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .footer .element_list {
     margin: 20px;
   }
