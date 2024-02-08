@@ -1,0 +1,56 @@
+/*menu animation*/
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dish {
+  opacity: 0;
+}
+
+.dish.animated {
+  animation: menu 1.5s ease forwards;
+}
+
+.dish.animated2 {
+  animation: menu 2s ease forwards;
+}
+
+.dish.animated3 {
+  animation: menu 3s ease forwards;
+}
+
+/*heart animation */
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes emptyHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.restaurant .hidden-checkbox:checked + .heart-label .fa-regular.fa-heart {
+  opacity: 0;
+}
+.restaurant .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled {
+  visibility: visible;
+  opacity: 1;
+  animation: heartColor 1s ease;
+}
+.restaurant .hidden-checkbox:not(:checked) + .heart-label {
+  opacity: 1;
+  animation: emptyHeart 1s ease;
+}/*# sourceMappingURL=animation.css.map */
