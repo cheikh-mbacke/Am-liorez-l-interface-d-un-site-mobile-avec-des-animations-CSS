@@ -1,0 +1,36 @@
+/*main-container*/
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto';
+   
+}
+
+.main-container {
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    @media (min-width:1024px)and (max-width:1440px) {
+       min-width: 1024px;
+        max-width: 1440px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+/*header*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    width: 100%;
+
+    &_logo {
+        width: 50%;
+        @media (min-width:768px)and (max-width:1440px) {
+          width: 20%;
+        }
+    }
+}
