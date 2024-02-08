@@ -1,0 +1,54 @@
+/* footer */
+.footer {
+    background-color: #353535;
+    height: 160px;
+    padding: 22px 25px 22px 25px;
+    @media (min-width:1024px)and (max-width:1440px) {
+        height: 125px;
+        padding-bottom: 0;
+       }
+  
+    &_logo {
+        font-size: 18px;
+        color: white;
+        font-family: 'shrikhand';
+        font-weight: 500;
+        @media (min-width:1024px)and (max-width:1440px) {
+            position: absolute;
+            margin-left: 88%;
+            padding-top: 50px;
+      
+                
+          }
+    }
+
+    &_list {
+        list-style: none;
+        color: white;
+        font-size: 16px;
+        padding-left: 0;
+        @media (min-width:1024px)and (max-width:1440px) {
+            display: flex;
+            flex-direction: row;
+           padding-top: 20px;
+      justify-content: flex-end;
+      padding-right: 170px;
+       
+          }
+          a { color: white;}
+    }
+
+    .element_list {
+        padding-bottom: 10px;
+        @media (min-width:1024px)and (max-width:1440px) {
+           margin: 20px;
+           
+          }
+    }
+
+    &_icon {
+        margin-right: 15px;
+        width: 11px;
+    }
+
+}
