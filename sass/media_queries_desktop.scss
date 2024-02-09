@@ -1,0 +1,54 @@
+/*accueil*/
+/*navbar*/
+@media (min-width:768px)and (max-width:1440px) {
+
+.first_title {  
+    font-size: 40px;
+    }
+
+.navbar {
+    &_btn {    width: 15%;}
+}
+.section_title { padding-left:10% ;
+    margin-bottom: 10px;}
+
+/*functioning section*/
+.functioning {
+    &_number{   display: inline;
+        margin-left: 20px;}
+    &_button {   flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 130px;
+      }
+      &_btn {  width: 322px;
+        margin-left: 30px;
+        margin-right: 20px;}
+}}
+
+/* section cards restaurants*/
+.cards_restaurant { 
+    width: 100%;
+}
+
+
+.card {  margin: 20px;
+        width: 35%;
+        margin-left: 40px;
+        margin-right: 70px;
+        height: 280px;}
+
+.btn_new {  margin-left: 400px; }
+
+/*restaurant page */
+/*main*/
+@media (min-width:1024px)and (max-width:1440px) {
+          
+        
+          
+
+.dish {  flex-direction: row;
+    justify-content: flex-start;}
+&_btn {   width: 322px;
+    margin-left: 30px;
+    margin-right: 20px;}
+}
