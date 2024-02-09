@@ -4,25 +4,18 @@
 @import "footer";
 @import "layout";
 
-
-/*header*/
-
 /*navbar*/
 
 .navbar {
-
     height: 350px;
     background-color: #eaeaea71;
     text-align: center;
 
     .form_container {
         background-color: $form-color;
-        box-shadow: 0px -4px 4px 0px $shadow-color-header,
-            0px 4px 4px 0px $shadow-color-header;
+        box-shadow: 0px -4px 4px 0px $shadow-color-header, 0px 4px 4px 0px $shadow-color-header;
 
         input {
-            border: none;
-
             &.value {
                 font-size: 16px;
                 padding-left: 10px;
@@ -34,7 +27,6 @@
 
     .first_title {
         font-size: 24px;
-        font-weight: 700;
         height: 68px;
         padding-top: 30px;
 
@@ -43,60 +35,39 @@
     .second_title {
         font-size: 18px;
         color: #353535;
-        font-weight: 300;
         padding-bottom: 10px;
     }
 
     &_btn {
-        
-        border-radius: 25px;
-        height: 50px;
-        background: linear-gradient(193.33deg, #{$main_color} -11.44%, #{$second_color} 123.93%);
-        border: none;
-        width: 50%;
-        box-shadow: 0px 4px 10px 0px $shadow-color-header;
-        
-    }
-   
-
-    .btn_p {
-        color: white;
-        font-weight: 500;
+@include button;
     }
 }
 
 .section_title {
     font-size: 24px;
-    font-weight: 700;
     padding-left: 20px;
-
 }
 
 /*functioning section*/
 .functioning {
-    width: 100%;
-   
- 
+
+
     &_number {
         padding: 6px 10px;
         font-size: 13px;
         border: solid 1.5px $main_color;
         border-radius: 50%;
         background-color: $main_color;
-        color: white;
         position: absolute;
-        display: flex;
         margin-top: 25px;
-      
+
     }
 
     &_button {
-        display: flex;
         flex-direction: column;
         padding: 10px 20px 10px 20px;
         justify-content: center;
         margin-bottom: 50px;
-  
     }
 
     &_btn {
@@ -104,15 +75,12 @@
         border-radius: 20px;
         background-color: #F6F6F6;
         height: 70px;
-        border: none;
-        width: 100%;
         margin-left: 10px;
         box-shadow: 0px 4px 15px 0px #00000026;
-  
+
     }
 
     &_p {
-        font-weight: 500;
         font-size: 16px;
         padding-right: 50px;
         text-align: left;
@@ -127,29 +95,25 @@
     &_icon--purple {
         color: $main_color;
     }
-    
 }
 
 /* section cards restaurants*/
 .cards_restaurant {
     background-color: #F6F6F6;
     padding-top: 20px;
-    
+
 }
-
-
 
 .card {
     border-radius: 15px;
     background-color: white;
     width: 90%;
-    display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
- 
+
 
     .btn_new {
         width: 80px;
@@ -158,7 +122,6 @@
         position: absolute;
         margin-left: 250px;
         margin-top: 10px;
-        border: none;
         border-radius: 2px;
 
     }
@@ -170,76 +133,52 @@
     }
 
     &_img {
-        width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-radius: 15px 15px 0 0;
         height: 200px;
         object-fit: cover;
     }
 
     &_content {
         color: black;
-        display: flex;
         justify-content: space-between;
         padding: 10px;
     }
 
     &_txt {
-
         h4,
         p {
             margin: 5px;
-
         }
     }
 
     &_title {
-        font-weight: bold;
         font-size: 18px;
-        
     }
 
     &_subtitle {
         font-size: 17px;
-    }}
+    }
+}
 
-/*heart checkbox*/    
-    
-    .hidden-checkbox {
-        position: absolute;
-        left: -9999px;
-    }
-    
-    .heart-label {
-        padding-top: 15px;
-        font-size: 25px;
-        padding-right: 30px;
-        position: relative;
-        cursor: pointer;
-    }
-    
-    
-    
-    
-    .fa-regular.fa-heart {
-        opacity: 0.5;
-        position: absolute;
-    
-    }
-    
-    .fa-solid.fa-heart.heartFilled {
-        color: transparent;
-        background: linear-gradient(180deg, #{$second_color} -11.44%, #{$main_color} 123.93%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-    
-    
-    }
-    
-    
+/*heart checkbox*/
+
+.heart-label {
+    padding-top: 15px;
+    font-size: 25px;
+    padding-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hidden-checkbox {
+@include hidden-checkbox;
+}
 
 
+.fa-regular.fa-heart {
+   @include heart-icons;
+}
 
+.fa-solid.fa-heart.heartFilled {
+@include heart-icons-filled ;
+}
