@@ -1,100 +1,11 @@
 @import "utils";
+@import "keyframes_accueil";
+@import "animation_accueil";
+@import "footer";
+@import "layout";
 
-/*Loader*/
-@keyframes loaderSpinner{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% { transform: rotate(360deg); opacity: 0;}
-    
-}
-@keyframes loader{
-    0% {
-       opacity: 1;
-    }
-    50% {opacity: 1;}
-    100% { opacity: 0;
-    visibility: hidden;}
-}
-
-.loader { background: linear-gradient(193.33deg, #{$main_color} -11.44%, #{$second_color} 123.93%);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-animation: loader 3s both ;
-z-index: 1;
-&_content {
-    font-size: 40px;
-    display: flex;
-    position: absolute;
-}
-&_spinner {
-    animation: loaderSpinner 3s linear both ;
-    position: absolute;
-    margin-left: 35%;
-margin-top: 40%;
-font-size: 120px;
-color: white;
-}
-
-&_icon{
-    
-color: $second_color;
-margin-left: 45%;
-margin-top: 50%;
-}
-
-
-&_logo {  
-    color: white;
-    font-family: 'shrikhand';
-    font-weight: 500;
-  margin-left: 20%;
-  margin-top: 70%;
-    padding-top: 20px;
-}
-
-
-}
-
-/*main-container*/
-body {
-    margin: 0;
-    width: 100%;
-    font-family: 'Roboto';
-   
-}
-
-.main-container {
-    width: 100%;
-    max-width: 768px;
-    box-sizing: border-box;
-    @media (min-width:1024px)and (max-width:1440px) {
-       min-width: 1024px;
-        max-width: 1440px;
-    }
-}
-
-a {
-    text-decoration: none;
-}
 
 /*header*/
-
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    width: 100%;
-
-    &_logo {
-        width: 50%;
-        @media (min-width:768px)and (max-width:1440px) {
-          width: 20%;
-        }
-    }
-}
 
 /*navbar*/
 
@@ -126,9 +37,7 @@ a {
         font-weight: 700;
         height: 68px;
         padding-top: 30px;
-        @media (min-width:768px)and (max-width:1440px) {
-           font-size: 40px;
-           }
+
     }
 
     .second_title {
@@ -146,17 +55,10 @@ a {
         border: none;
         width: 50%;
         box-shadow: 0px 4px 10px 0px $shadow-color-header;
-        @media (min-width:768px)and (max-width:1440px) {
-         width: 15%;
-        }
-      
+        
     }
    
-    &_btn:hover{
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-        cursor: pointer;
-}
+
     .btn_p {
         color: white;
         font-weight: 500;
@@ -167,10 +69,7 @@ a {
     font-size: 24px;
     font-weight: 700;
     padding-left: 20px;
-    @media (min-width:768px)and (max-width:1440px) {
-        padding-left:10% ;
-        margin-bottom: 10px;
-      }
+
 }
 
 /*functioning section*/
@@ -188,10 +87,7 @@ a {
         position: absolute;
         display: flex;
         margin-top: 25px;
-        @media (min-width:1024px)and (max-width:1440px) {
-          display: inline;
-          margin-left: 20px;
-        }
+      
     }
 
     &_button {
@@ -200,13 +96,7 @@ a {
         padding: 10px 20px 10px 20px;
         justify-content: center;
         margin-bottom: 50px;
-        @media (min-width:1024px)and (max-width:1440px) {
-            flex-direction: row;
-          justify-content: flex-start;
-          padding-left: 130px;
-          display: flex;
-          
-        }
+  
     }
 
     &_btn {
@@ -218,11 +108,7 @@ a {
         width: 100%;
         margin-left: 10px;
         box-shadow: 0px 4px 15px 0px #00000026;
-        @media (min-width:1024px)and (max-width:1440px) {
-            width: 322px;
-            margin-left: 30px;
-            margin-right: 20px;
-        }
+  
     }
 
     &_p {
@@ -248,17 +134,9 @@ a {
 .cards_restaurant {
     background-color: #F6F6F6;
     padding-top: 20px;
-    @media (min-width:768px)and (max-width:1440px) {
-        width: 100%;
-    }
     
 }
-.restaurant_card {  @media (min-width:1024px)and (max-width:1440px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 20px;
-}}
+
 
 
 .card {
@@ -271,13 +149,7 @@ a {
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
-    @media (min-width:1024px)and (max-width:1440px) {
-        margin: 20px;
-        width: 35%;
-        margin-left: 40px;
-        margin-right: 70px;
-        height: 280px;
-     }
+ 
 
     .btn_new {
         width: 80px;
@@ -288,9 +160,7 @@ a {
         margin-top: 10px;
         border: none;
         border-radius: 2px;
-        @media (min-width:1024px)and (max-width:1440px) {
-           margin-left: 400px;
-           }
+
     }
 
     .btn_txt {
@@ -333,44 +203,7 @@ a {
         font-size: 17px;
     }}
 
-
-    @keyframes heartColor {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-    
-        }
-    }
-    
-    @keyframes emptyHeart {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    .card {
-        .hidden-checkbox:checked+.heart-label .fa-regular.fa-heart {
-            opacity: 0;
-        }
-    
-        .hidden-checkbox:checked+.heart-label .fa-solid.fa-heart.heartFilled {
-            visibility: visible;
-            opacity: 1;
-            animation: heartColor 1s ease;
-        }
-    
-        .hidden-checkbox:not(:checked)+.heart-label {
-            opacity: 1;
-            animation: emptyHeart 1s ease;
-        }
-    }
+/*heart checkbox*/    
     
     .hidden-checkbox {
         position: absolute;
@@ -396,7 +229,7 @@ a {
     
     .fa-solid.fa-heart.heartFilled {
         color: transparent;
-        background: linear-gradient(180deg, #{$main_color} -11.44%, #{$second_color} 123.93%);
+        background: linear-gradient(180deg, #{$second_color} -11.44%, #{$main_color} 123.93%);
         -webkit-background-clip: text;
         background-clip: text;
         position: absolute;
@@ -410,56 +243,3 @@ a {
 
 
 
-/* footer */
-.footer {
-    background-color: #353535;
-    height: 160px;
-    padding: 22px 25px 22px 25px;
-    @media (min-width:1024px)and (max-width:1440px) {
-        height: 125px;
-        padding-bottom: 0;
-       }
-  
-    &_logo {
-        font-size: 18px;
-        color: white;
-        font-family: 'shrikhand';
-        font-weight: 500;
-        @media (min-width:1024px)and (max-width:1440px) {
-            position: absolute;
-            margin-left: 88%;
-            padding-top: 50px;
-      
-                
-          }
-    }
-
-    &_list {
-        list-style: none;
-        color: white;
-        font-size: 16px;
-        padding-left: 0;
-        @media (min-width:1024px)and (max-width:1440px) {
-            display: flex;
-            flex-direction: row;
-           padding-top: 20px;
-      justify-content: flex-end;
-      padding-right: 170px;
-       
-          }
-    }
-
-    .element_list {
-        padding-bottom: 10px;
-        @media (min-width:1024px)and (max-width:1440px) {
-           margin: 20px;
-           
-          }
-    }
-
-    &_icon {
-        margin-right: 15px;
-        width: 11px;
-    }
-
-}
