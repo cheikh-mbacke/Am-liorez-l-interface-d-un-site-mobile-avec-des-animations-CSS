@@ -1,15 +1,9 @@
-@import "utils";
-@import "animation_restaurants_page";
-@import "keyframes_restaurants_page";
-@import "footer";
-@import "layout";
 @import "media_queries_desktop";
-
+@import "utils";
 /*image*/
 .image {
     &_restaurant {
         position: absolute;
-
 
     }
 }

@@ -1,11 +1,8 @@
-@import "utils";
-@import "keyframes_accueil";
-@import "animation_accueil";
-@import "footer";
-@import "layout";
+@import "utils"; 
+@import "media_queries_desktop";
 
 /*navbar*/
-
+ 
 .navbar {
     height: 350px;
     background-color: #eaeaea71;
@@ -103,6 +100,7 @@
     padding-top: 20px;
 
 }
+
 
 .card {
     border-radius: 15px;
