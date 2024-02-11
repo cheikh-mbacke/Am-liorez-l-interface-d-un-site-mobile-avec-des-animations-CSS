@@ -26,21 +26,24 @@
     margin-left: 30px;
     margin-right: 20px;
   }
-  /* section cards restaurants*/
-  .cards_restaurant {
-    width: 100%;
-  }
-  .card {
-    margin: 20px;
-    width: 35%;
-    margin-left: 40px;
-    margin-right: 70px;
-    height: 280px;
-  }
-  .btn_new {
-    margin-left: 400px;
-  }
 }
+/* section cards restaurants*/
+.cards_restaurant {
+  width: 100%;
+}
+
+.card {
+  margin: 20px;
+  width: 35%;
+  margin-left: 40px;
+  margin-right: 70px;
+  height: 280px;
+}
+
+.btn_new {
+  margin-left: 400px;
+}
+
 /*restaurant page */
 /*main*/
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -84,6 +87,215 @@
 
 .flex {
   display: flex;
+}
+
+/*menu animation*/
+.dish {
+  opacity: 0;
+}
+
+.dish.animated {
+  animation: menu 1.5s ease forwards;
+}
+
+.dish.animated2 {
+  animation: menu 2s ease forwards;
+}
+
+.dish.animated3 {
+  animation: menu 3s ease forwards;
+}
+
+/*heart animation */
+.restaurant .hidden-checkbox:checked + .heart-label .fa-regular.fa-heart {
+  opacity: 0;
+}
+.restaurant .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled {
+  visibility: visible;
+  opacity: 1;
+  animation: heartColor 1s ease;
+}
+.restaurant .hidden-checkbox:not(:checked) + .heart-label {
+  opacity: 1;
+  animation: emptyHeart 1s ease;
+}
+
+/*animation to the right of the dishes*/
+.dish_btn {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.dish .progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #99E2D0;
+  z-index: 1;
+}
+.dish .logo {
+  color: white;
+  border: none;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.dish_btn:focus {
+  background-color: white;
+}
+.dish_btn:focus .progress {
+  animation: progress 0.5s ease both;
+}
+.dish_btn:focus .dish_price {
+  animation: price 0.5s ease both;
+}
+
+/*button order*/
+.order:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+/*menu restaurant page*/
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes emptyHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation to the right of the dishes*/
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+@keyframes price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+/* footer */
+.footer {
+  background-color: #353535;
+  height: 160px;
+  padding: 22px 25px 22px 25px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .footer {
+    height: 125px;
+    padding-bottom: 0;
+  }
+}
+.footer_logo {
+  font-size: 18px;
+  color: white;
+  font-family: "shrikhand";
+  font-weight: 500;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .footer_logo {
+    position: absolute;
+    margin-left: 88%;
+    padding-top: 50px;
+  }
+}
+.footer_list {
+  list-style: none;
+  color: white;
+  font-size: 16px;
+  padding-left: 0;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .footer_list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: flex-end;
+    padding-right: 170px;
+  }
+}
+.footer_list a {
+  color: white;
+}
+.footer .element_list {
+  padding-bottom: 10px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .footer .element_list {
+    margin: 20px;
+  }
+}
+.footer_icon {
+  margin-right: 15px;
+  width: 11px;
+}
+
+/*main-container*/
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto";
+}
+
+.main-container {
+  width: 100%;
+  max-width: 768px;
+  box-sizing: border-box;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .main-container {
+    min-width: 1024px;
+    max-width: 1440px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  width: 100%;
+}
+.header_logo {
+  width: 50%;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .header_logo {
+    width: 20%;
+  }
 }
 
 /*image*/
@@ -150,7 +362,7 @@
 .dish_button {
   flex-direction: column;
   padding: 3px 20px 10px 10px;
-  width: 95%;
+  width: 90%;
   margin-right: 100px;
 }
 .dish_btn {

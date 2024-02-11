@@ -1,5 +1,9 @@
 @import "media_queries_desktop";
 @import "utils";
+@import "animation_restaurants_page";
+@import "keyframes_restaurants_page";
+@import "footer";
+@import "layout";
 /*image*/
 .image {
     &_restaurant {
@@ -64,7 +68,7 @@
     &_button {
         flex-direction: column;
         padding: 3px 20px 10px 10px;
-        width: 95%;
+        width: 90%;
         margin-right: 100px;
 
 
