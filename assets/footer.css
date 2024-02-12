@@ -4,24 +4,11 @@
   height: 160px;
   padding: 22px 25px 22px 25px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer {
-    height: 125px;
-    padding-bottom: 0;
-  }
-}
 .footer_logo {
   font-size: 18px;
   color: white;
   font-family: "shrikhand";
   font-weight: 500;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer_logo {
-    position: absolute;
-    margin-left: 88%;
-    padding-top: 50px;
-  }
 }
 .footer_list {
   list-style: none;
@@ -29,25 +16,11 @@
   font-size: 16px;
   padding-left: 0;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer_list {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    justify-content: flex-end;
-    padding-right: 170px;
-  }
-}
 .footer_list a {
   color: white;
 }
 .footer .element_list {
   padding-bottom: 10px;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer .element_list {
-    margin: 20px;
-  }
 }
 .footer_icon {
   margin-right: 15px;

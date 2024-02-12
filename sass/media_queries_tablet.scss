@@ -1,0 +1,86 @@
+/*home page*/
+/*main container*/
+@media (min-width:768px)and (max-width:1024px) {
+
+/*loader*/
+.loader { 
+    
+
+&_spinner {
+    font-size: 180px;
+    margin-left: 38%;
+margin-top: 25%;
+
+
+}
+
+&_icon{
+    
+    font-size: 60px;
+margin-left: 45%;
+margin-top: 32%;
+}
+
+
+&_logo {  
+    font-size: 60px;
+  margin-left: 30%;
+  margin-top: 50%;
+    padding-top: 20px;
+}
+
+
+}
+
+
+
+
+
+
+.main-container { max-width: 1024px;}
+
+/*navbar*/
+.navbar {  &_btn {    width: 25%;} }
+
+/*functioning section*/
+.width100{ width: 90%;}
+
+.functioning_number { display: flex;}
+
+/*restaurant cards*/
+.restaurant_card { display: flex;
+flex-direction: row;
+width: 100%;
+flex-wrap: wrap;}
+.restaurant { display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+a { width: 50%;}
+}
+.card { width: 90%;
+margin-left: 20px;
+.btn_new {margin-left: 70%;}
+}
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }

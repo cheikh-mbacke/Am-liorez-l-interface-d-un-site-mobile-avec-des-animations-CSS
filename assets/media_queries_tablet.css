@@ -1,0 +1,58 @@
+/*home page*/
+/*main container*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*loader*/
+  .loader_spinner {
+    font-size: 180px;
+    margin-left: 38%;
+    margin-top: 25%;
+  }
+  .loader_icon {
+    font-size: 60px;
+    margin-left: 45%;
+    margin-top: 32%;
+  }
+  .loader_logo {
+    font-size: 60px;
+    margin-left: 30%;
+    margin-top: 50%;
+    padding-top: 20px;
+  }
+  .main-container {
+    max-width: 1024px;
+  }
+  /*navbar*/
+  .navbar_btn {
+    width: 25%;
+  }
+  /*functioning section*/
+  .width100 {
+    width: 90%;
+  }
+  .functioning_number {
+    display: flex;
+  }
+  /*restaurant cards*/
+  .restaurant_card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .restaurant a {
+    width: 50%;
+  }
+  .card {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .card .btn_new {
+    margin-left: 70%;
+  }
+}/*# sourceMappingURL=media_queries_tablet.css.map */

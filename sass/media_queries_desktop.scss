@@ -48,7 +48,31 @@
 
 .dish {  flex-direction: row;
     justify-content: flex-start;}
-&_btn {   width: 322px;
+.dish_btn {   width: 322px;
     margin-left: 30px;
     margin-right: 20px;}
 }
+
+/*footer
+.footer {    
+    height: 125px;
+    padding-bottom: 0;
+    &_logo {  
+        position: absolute;
+        margin-left: 88%;
+        padding-top: 50px;
+  
+            
+      }
+      &_list  {
+        display: flex;
+        flex-direction: row;
+       padding-top: 20px;
+  justify-content: flex-end;
+  padding-right: 170px;
+   .element_list     {
+    margin: 20px;
+    
+   }
+      }
+   }*/
