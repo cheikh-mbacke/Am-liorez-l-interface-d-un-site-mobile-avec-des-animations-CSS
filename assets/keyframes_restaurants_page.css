@@ -42,4 +42,20 @@
   100% {
     transform: translateX(-50%);
   }
+}
+@keyframes progressReverse {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes priceReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=keyframes_restaurants_page.css.map */

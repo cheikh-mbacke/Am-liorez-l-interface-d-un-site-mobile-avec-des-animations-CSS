@@ -82,6 +82,23 @@
      
     }
 
+    &_btn:not(:focus) {
+        .progress {
+            
+            animation: progressReverse 0.5s ease both;
+        }
+        .dish_price {
+           animation: priceReverse 0.5s ease both;
+        
+        }
+        .dish_subtitle {
+            margin-right: 0px;
+        }
+        .dish_title {
+            margin-right: 0px;
+        }
+    }
+
 }
 
 

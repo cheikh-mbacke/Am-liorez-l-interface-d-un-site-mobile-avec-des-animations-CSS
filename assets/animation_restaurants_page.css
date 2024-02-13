@@ -153,6 +153,22 @@
     transform: translateX(-50%);
   }
 }
+@keyframes progressReverse {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes priceReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .dish {
   opacity: 0;
 }
@@ -219,6 +235,18 @@
 }
 .dish_btn:focus .dish_title {
   margin-right: 30px;
+}
+.dish_btn:not(:focus) .progress {
+  animation: progressReverse 0.5s ease both;
+}
+.dish_btn:not(:focus) .dish_price {
+  animation: priceReverse 0.5s ease both;
+}
+.dish_btn:not(:focus) .dish_subtitle {
+  margin-right: 0px;
+}
+.dish_btn:not(:focus) .dish_title {
+  margin-right: 0px;
 }
 
 /*button order*/
