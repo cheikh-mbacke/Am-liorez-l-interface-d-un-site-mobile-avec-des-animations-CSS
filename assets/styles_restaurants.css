@@ -7,10 +7,8 @@
   .navbar_btn {
     width: 15%;
   }
-  .section_title {
-    padding-left: 10%;
-    margin-bottom: 10px;
-  }
+  /*.section_title { padding-left:10% ;
+      margin-bottom: 10px;}*/
   /*functioning section*/
   .functioning_number {
     display: inline;
@@ -26,27 +24,24 @@
     margin-left: 30px;
     margin-right: 20px;
   }
+  /* section cards restaurants*/
+  .cards_restaurant {
+    width: 100%;
+  }
+  .card {
+    margin: 20px;
+    width: 35%;
+    margin-left: 40px;
+    margin-right: 70px;
+    height: 280px;
+  }
+  .btn_new {
+    margin-left: 400px;
+  }
+  /*restaurant page */
+  /*main*/
 }
-/* section cards restaurants*/
-.cards_restaurant {
-  width: 100%;
-}
-
-.card {
-  margin: 20px;
-  width: 35%;
-  margin-left: 40px;
-  margin-right: 70px;
-  height: 280px;
-}
-
-.btn_new {
-  margin-left: 400px;
-}
-
-/*restaurant page */
-/*main*/
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) and (min-width: 1024px) and (max-width: 1440px) {
   .dish {
     flex-direction: row;
     justify-content: flex-start;
@@ -55,6 +50,111 @@
     width: 322px;
     margin-left: 30px;
     margin-right: 20px;
+  }
+}
+/*footer
+.footer {    
+    height: 125px;
+    padding-bottom: 0;
+    &_logo {  
+        position: absolute;
+        margin-left: 88%;
+        padding-top: 50px;
+
+
+      }
+      &_list  {
+        display: flex;
+        flex-direction: row;
+       padding-top: 20px;
+  justify-content: flex-end;
+  padding-right: 170px;
+   .element_list     {
+    margin: 20px;
+
+   }
+      }
+   }*/
+/*home page*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*loader*/
+  .loader_spinner {
+    font-size: 180px;
+    margin-left: 38%;
+    margin-top: 25%;
+  }
+  .loader_icon {
+    font-size: 60px;
+    margin-left: 45%;
+    margin-top: 32%;
+  }
+  .loader_logo {
+    font-size: 60px;
+    margin-left: 30%;
+    margin-top: 50%;
+    padding-top: 20px;
+  }
+  /*main container*/
+  .main-container {
+    max-width: 1024px;
+  }
+  /*navbar*/
+  .navbar_btn {
+    width: 25%;
+  }
+  /*functioning section*/
+  /*.width100{ width: 90%;}*/
+  .functioning_number {
+    display: flex;
+  }
+  /*restaurant cards*/
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .restaurant a {
+    width: 50%;
+  }
+  .card {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .card .btn_new {
+    margin-left: 70%;
+  }
+  /*restaurant page*/
+  /*header + img*/
+  .header {
+    background-color: white;
+  }
+  .image_restaurant {
+    height: 30%;
+    object-fit: cover;
+  }
+  /*menu section*/
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .menu .restaurant {
+    justify-content: center;
+  }
+  .menu .menu_section {
+    margin-left: 12%;
+    width: 4%;
+  }
+  .menu .dish {
+    padding-left: 10%;
+    width: 80%;
+  }
+  .menu .dish_price {
+    padding-left: 80px;
+  }
+  .menu .order {
+    width: 25%;
+    margin-left: 35%;
   }
 }
 .font_weight700 {
@@ -99,10 +199,8 @@
   .navbar_btn {
     width: 15%;
   }
-  .section_title {
-    padding-left: 10%;
-    margin-bottom: 10px;
-  }
+  /*.section_title { padding-left:10% ;
+      margin-bottom: 10px;}*/
   /*functioning section*/
   .functioning_number {
     display: inline;
@@ -118,27 +216,24 @@
     margin-left: 30px;
     margin-right: 20px;
   }
+  /* section cards restaurants*/
+  .cards_restaurant {
+    width: 100%;
+  }
+  .card {
+    margin: 20px;
+    width: 35%;
+    margin-left: 40px;
+    margin-right: 70px;
+    height: 280px;
+  }
+  .btn_new {
+    margin-left: 400px;
+  }
+  /*restaurant page */
+  /*main*/
 }
-/* section cards restaurants*/
-.cards_restaurant {
-  width: 100%;
-}
-
-.card {
-  margin: 20px;
-  width: 35%;
-  margin-left: 40px;
-  margin-right: 70px;
-  height: 280px;
-}
-
-.btn_new {
-  margin-left: 400px;
-}
-
-/*restaurant page */
-/*main*/
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) and (min-width: 1024px) and (max-width: 1440px) {
   .dish {
     flex-direction: row;
     justify-content: flex-start;
@@ -149,6 +244,29 @@
     margin-right: 20px;
   }
 }
+/*footer
+.footer {    
+    height: 125px;
+    padding-bottom: 0;
+    &_logo {  
+        position: absolute;
+        margin-left: 88%;
+        padding-top: 50px;
+
+
+      }
+      &_list  {
+        display: flex;
+        flex-direction: row;
+       padding-top: 20px;
+  justify-content: flex-end;
+  padding-right: 170px;
+   .element_list     {
+    margin: 20px;
+
+   }
+      }
+   }*/
 .font_weight700 {
   font-weight: 700;
 }
@@ -215,7 +333,7 @@
     width: 0%;
   }
   100% {
-    width: 18%;
+    width: 60px;
   }
 }
 @keyframes price {
@@ -276,6 +394,7 @@
   border: none;
   font-size: 30px;
   margin-top: 20px;
+  padding-left: 30%;
 }
 .dish_btn:focus {
   background-color: white;
@@ -334,7 +453,7 @@
     width: 0%;
   }
   100% {
-    width: 18%;
+    width: 60px;
   }
 }
 @keyframes price {
@@ -351,24 +470,11 @@
   height: 160px;
   padding: 22px 25px 22px 25px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer {
-    height: 125px;
-    padding-bottom: 0;
-  }
-}
 .footer_logo {
   font-size: 18px;
   color: white;
   font-family: "shrikhand";
   font-weight: 500;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer_logo {
-    position: absolute;
-    margin-left: 88%;
-    padding-top: 50px;
-  }
 }
 .footer_list {
   list-style: none;
@@ -376,25 +482,11 @@
   font-size: 16px;
   padding-left: 0;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer_list {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    justify-content: flex-end;
-    padding-right: 170px;
-  }
-}
 .footer_list a {
   color: white;
 }
 .footer .element_list {
   padding-bottom: 10px;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .footer .element_list {
-    margin: 20px;
-  }
 }
 .footer_icon {
   margin-right: 15px;
@@ -489,6 +581,7 @@ a {
   padding-top: 20px;
   position: relative;
   margin-top: 210px;
+  /* width: 100%;*/
 }
 .menu_section {
   font-size: 16px;

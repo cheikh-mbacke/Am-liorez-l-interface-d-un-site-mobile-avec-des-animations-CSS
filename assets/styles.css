@@ -39,10 +39,8 @@
   .navbar_btn {
     width: 15%;
   }
-  .section_title {
-    padding-left: 10%;
-    margin-bottom: 10px;
-  }
+  /*.section_title { padding-left:10% ;
+      margin-bottom: 10px;}*/
   /*functioning section*/
   .functioning_number {
     display: inline;

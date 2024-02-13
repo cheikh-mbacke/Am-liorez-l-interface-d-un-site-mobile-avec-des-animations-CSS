@@ -33,7 +33,7 @@ transform: translateY(0);
 /*animation to the right of the dishes*/
 @keyframes progress {
     0% { width: 0%;}
-    100% {width: 18%;}
+    100% {width: 60px;}
     }
     @keyframes price { 
     0% {   transform: translateX(0); }

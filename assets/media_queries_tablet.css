@@ -1,5 +1,4 @@
 /*home page*/
-/*main container*/
 @media (min-width: 768px) and (max-width: 1024px) {
   /*loader*/
   .loader_spinner {
@@ -18,6 +17,7 @@
     margin-top: 50%;
     padding-top: 20px;
   }
+  /*main container*/
   .main-container {
     max-width: 1024px;
   }
@@ -26,19 +26,11 @@
     width: 25%;
   }
   /*functioning section*/
-  .width100 {
-    width: 90%;
-  }
+  /*.width100{ width: 90%;}*/
   .functioning_number {
     display: flex;
   }
   /*restaurant cards*/
-  .restaurant_card {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-  }
   .restaurant {
     display: flex;
     flex-direction: row;
@@ -54,5 +46,37 @@
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  /*restaurant page*/
+  /*header + img*/
+  .header {
+    background-color: white;
+  }
+  .image_restaurant {
+    height: 30%;
+    object-fit: cover;
+  }
+  /*menu section*/
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .menu .restaurant {
+    justify-content: center;
+  }
+  .menu .menu_section {
+    margin-left: 12%;
+    width: 4%;
+  }
+  .menu .dish {
+    padding-left: 10%;
+    width: 80%;
+  }
+  .menu .dish_price {
+    padding-left: 80px;
+  }
+  .menu .order {
+    width: 25%;
+    margin-left: 35%;
   }
 }/*# sourceMappingURL=media_queries_tablet.css.map */

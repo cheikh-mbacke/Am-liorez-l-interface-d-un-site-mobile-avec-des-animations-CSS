@@ -1,4 +1,5 @@
 @import "media_queries_desktop";
+@import "media_queries_tablet";
 @import "utils";
 @import "animation_restaurants_page";
 @import "keyframes_restaurants_page";
@@ -52,6 +53,7 @@
     padding-top: 20px;
     position: relative;
     margin-top: 210px;
+   /* width: 100%;*/
 
     &_section {
         font-size: 16px;
