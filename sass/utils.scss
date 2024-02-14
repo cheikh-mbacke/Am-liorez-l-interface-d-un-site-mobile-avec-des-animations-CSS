@@ -15,6 +15,7 @@ $grey-color: #F6F6F6;
 .border_none {  border: none;}
 .flex { display: flex;}
 
+
 @mixin button { 
     border-radius: 25px;
     height: 50px;
@@ -42,6 +43,37 @@ $grey-color: #F6F6F6;
         position: absolute;
         visibility: hidden;
         opacity: 0;
-    
-    
     }
+/*mixin medias_queries tablet and desktop*/
+/*loader*/
+@mixin font-size-loader {
+    &_spinner {font-size: 180px;}
+    &_icon, &_logo { font-size: 60px;}
+    
+}
+/*restaurant cards home page and restaurant page*/
+@mixin restaurant-cards {
+    .restaurant {display: flex;
+    flex-direction: row;
+flex-wrap: wrap;}
+ .btn_new { margin-left: 70%;}
+}
+/*restaurant page, header*/
+@mixin header_restaurant_page {
+    .header { background-color: white;}
+.image_restaurant { height: 30%;
+object-fit: cover;}
+ }
+
+/*menu*/
+@mixin menu {
+    .menu { width: 80%;
+    margin-left: 10%;}
+    .restaurant { justify-content: center;}
+    .menu_section {margin-left: 12%;
+        width: 4%;}
+        .dish { padding-left: 10%;
+        width: 80%;}
+        .order { width: 25%;
+            margin-left: 35%;}
+}

@@ -1,28 +1,24 @@
 
-
+@import "utils";
 /*home page*/
 
 @media (min-width:768px)and (max-width:1024px) {
 
 /*loader*/
 .loader { 
-    
-
+@include font-size-loader;
 &_spinner {
-    font-size: 180px;
     margin-left: 38%;
 margin-top: 25%;
 }
 
 &_icon{
-    font-size: 60px;
 margin-left: 45%;
 margin-top: 32%;
 }
 
 
 &_logo {  
-    font-size: 60px;
   margin-left: 30%;
   margin-top: 50%;
     padding-top: 20px;
@@ -43,47 +39,26 @@ margin-top: 32%;
 .functioning_number { display: flex;}
 
 /*restaurant cards*/
-
-.restaurant { display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+@include restaurant-cards;
+.restaurant { 
+    
 width: 100%;
 a { width: 50%;}
 }
 .card { width: 90%;
 margin-left: 20px;
-.btn_new {margin-left: 70%;}
 }
- 
-
+.card .btn_new { margin-left: 70%;}
 /*restaurant page*/
 /*header + img*/
-.header { background-color: white;}
-.image_restaurant { height: 30%;
-object-fit: cover;}
+@include header_restaurant_page;
 
 /*menu section*/
 
 .menu {
-    width: 80%;
-    margin-left: 10%;
-    
-    .restaurant { justify-content: center;}
-    .menu_section {margin-left: 12%;
-        width: 4%;}
-        .dish { padding-left: 10%;
-        width: 80%;}
+   @include menu;
         .dish_price {
         padding-left: 80px;}
-        .order { width: 25%;
-        margin-left: 35%;}
-}
-
-
-
-   
-
-  
-    
-    
+     
+}    
     }

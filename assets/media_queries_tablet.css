@@ -1,18 +1,58 @@
+.font_weight700 {
+  font-weight: 700;
+}
+
+.font_weight500 {
+  font-weight: 500;
+}
+
+.font_weight300 {
+  font-weight: 300;
+}
+
+.font_weight_bold {
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.border_none {
+  border: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/*mixin medias_queries tablet and desktop*/
+/*loader*/
+/*restaurant cards home page and restaurant page*/
+/*restaurant page, header*/
+/*menu*/
 /*home page*/
 @media (min-width: 768px) and (max-width: 1024px) {
   /*loader*/
   .loader_spinner {
     font-size: 180px;
+  }
+  .loader_icon, .loader_logo {
+    font-size: 60px;
+  }
+  .loader_spinner {
     margin-left: 38%;
     margin-top: 25%;
   }
   .loader_icon {
-    font-size: 60px;
     margin-left: 45%;
     margin-top: 32%;
   }
   .loader_logo {
-    font-size: 60px;
     margin-left: 30%;
     margin-top: 50%;
     padding-top: 20px;
@@ -35,6 +75,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .btn_new {
+    margin-left: 70%;
+  }
+  .restaurant {
     width: 100%;
   }
   .restaurant a {
@@ -57,7 +102,7 @@
     object-fit: cover;
   }
   /*menu section*/
-  .menu {
+  .menu .menu {
     width: 80%;
     margin-left: 10%;
   }
@@ -72,11 +117,11 @@
     padding-left: 10%;
     width: 80%;
   }
-  .menu .dish_price {
-    padding-left: 80px;
-  }
   .menu .order {
     width: 25%;
     margin-left: 35%;
+  }
+  .menu .dish_price {
+    padding-left: 80px;
   }
 }/*# sourceMappingURL=media_queries_tablet.css.map */
