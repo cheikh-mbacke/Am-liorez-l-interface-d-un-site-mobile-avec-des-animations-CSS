@@ -44,30 +44,31 @@
       <h1 class="navbar_title first_title font_weight700">Réservez le menu qui vous convient</h1>
       <h2 class="navbar_title second_title font_weight300"> Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
 
-      <button class="navbar_btn border_none">
-        <a href="#restaurants">
-          <p class="btn_p font_weight500 white">Explorer nos restaurants</p>
+     
+      <div class="navbar_btn border_none"> <a href="#restaurants">
+          <span class="btn_p font_weight500 white">Explorer nos restaurants</span>
         </a>
-      </button>
+      </div>
+  
 
     </nav>
-    <section class="functioning width100">
+    <section class="functioning ">
       <h3 class="section_title font_weight700"> Fonctionnement</h3>
       <div class="functioning_button">
         <div class="functioning_item">
           <span class="functioning_number white">1</span>
-          <button class="functioning_btn width100 border_none">
-            <p class="functioning_p font_weight500"><i class="functioning_icon fa-solid fa-mobile-screen-button"></i>Choisissez un
-              restaurant</p>
+          <button class="functioning_btn  border_none">
+            <span class="functioning_p font_weight500"><i class="functioning_icon fa-solid fa-mobile-screen-button"></i>Choisissez un
+              restaurant</span>
           </button>
           <span class="functioning_number white">2 </span>
-          <button class="functioning_btn width100 border_none">
-            <p class="functioning_p"><i class="functioning_icon fa-solid fa-list-ul"></i>Composez votre menu</p>
+          <button class="functioning_btn  border_none">
+            <span class="functioning_p"><i class="functioning_icon fa-solid fa-list-ul"></i>Composez votre menu</span>
           </button>
           <span class="functioning_number white">3 </span>
-          <button class="functioning_btn width100 border_none">
-            <p class="functioning_p"><i class="functioning_icon functioning_icon--purple fa-solid fa-store"></i>Dégustez
-              au restaurant</p>
+          <button class="functioning_btn  border_none">
+            <span class="functioning_p"><i class="functioning_icon functioning_icon--purple fa-solid fa-store"></i>Dégustez
+              au restaurant</span>
           </button>
         </div>
       </div>
@@ -79,14 +80,15 @@
     <div class="cards_restaurant">
       <main class="restaurant">
         <h3 class="section_title" id="restaurants">Restaurants</h3>
-        <a class="restaurant_card">
-          <a href="restaurants/palette_du_gout.html">
+        <a class="restaurant_card"></a>
+          
           <article class="card flex">
-            <button class="btn_new border_none">
+            <div class="btn_new border_none">
               <p class="btn_txt">Nouveau</p>
-            </button>
-            <img class="card_img " src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="photo de plat">
+            </div>
+            <a href="restaurants/palette_du_gout.html">
+            <img class="card_img width100 " src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="photo de plat"></a>
             <div class="card_content flex">
               <div class="card_txt">
                 <h4 class="card_title ">La palette du goût</h4>
@@ -101,13 +103,14 @@
               </div>
             </div>
           </article>
-          </a>
-         <a href="#">
+        
+       
           <article class="card flex ">
-            <button class="btn_new border_none">
+            <div class="btn_new border_none">
               <p class="btn_txt">Nouveau</p>
-            </button>
-            <img class="card_img " src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de plat">
+            </div>
+            <a href="#">
+            <img class="card_img width100" src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de plat"></a>
             <div class="card_content flex">
               <div class="card_txt">
                 <h4 class="card_title">La note enchantée</h4>
@@ -122,11 +125,12 @@
               </div>
             </div>
           </article>
-          </a>
-          <a href="#">
+          
+          
           <article class="card flex">
-            <img class="card_img" src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="photo de plat">
+            <a href="#">
+            <img class="card_img width100" src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="photo de plat"></a>
             <div class="card_content flex">
               <div class="card_txt">
                 <h4 class="card_title">A la française</h4>
@@ -141,11 +145,12 @@
               </div>
             </div>
           </article>
-          </a>
-          <a href="#">
+         
+         
             <article class="card flex">
-              <img class="card_img" src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="photo de plat">
+              <a href="#">
+              <img class="card_img width100" src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="photo de plat"></a>
               <div class="card_content flex">
                 <div class="card_txt">
                   <h4 class="card_title">Le délice des sens</h4>
@@ -160,8 +165,8 @@
               </div>
             </div>
           </article>
-        </a>
-        </div>
+        
+  
 
       </main>
 
@@ -175,7 +180,7 @@
         <li class="element_list"><i class="fa-solid fa-utensils footer_icon"></i>Proposer un restaurant</li>
         <li class="element_list"><i class="fa-solid fa-handshake-angle footer_icon"></i>Devenir partenaire</li>
         <li class="element_list">Mentions légales</li>
-        <a href="mailto:ohmyfood@gmail.com" > <li class="element_list">Contact</a> </li>
+        <li class="element_list"> <a href="mailto:ohmyfood@gmail.com" > Contact</a> </li>
       </ul>
     </footer>
 

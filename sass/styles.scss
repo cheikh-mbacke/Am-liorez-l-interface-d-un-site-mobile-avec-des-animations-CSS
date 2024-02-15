@@ -38,7 +38,13 @@
 
     &_btn {
 @include button;
+display: inline-block;
     }
+.btn_p { 
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
 }
 
 .section_title {
@@ -75,13 +81,14 @@
         height: 70px;
         margin-left: 10px;
         box-shadow: 0px 4px 15px 0px #00000026;
-
+width: 100%;
     }
 
     &_p {
         font-size: 16px;
         padding-right: 50px;
         text-align: left;
+       display: flex;
     }
 
     &_icon {
@@ -129,12 +136,14 @@
         color: #008766;
         font-size: 14px;
         margin-top: 3px;
+        text-align: center;
     }
 
     &_img {
         border-radius: 15px 15px 0 0;
         height: 200px;
         object-fit: cover;
+        
     }
 
     &_content {
