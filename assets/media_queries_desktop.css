@@ -58,11 +58,11 @@
     padding-top: 10px;
   }
   /*navbar*/
-  .first_title {
-    font-size: 40px;
-  }
   .navbar_btn {
     width: 15%;
+  }
+  .navbar .first_title {
+    font-size: 40px;
   }
   .section_title {
     padding-left: 150px;
@@ -73,21 +73,17 @@
   }
   .functioning .functioning_btn {
     width: 30%;
+    margin-right: 15px;
   }
   .functioning .functioning_button {
-    margin-left: 150px;
+    margin-left: 120px;
   }
   .functioning_p {
     display: flex;
   }
-  /*restaurant page */
   /*header + img*/
   .header {
     background-color: white;
-  }
-  .image_restaurant {
-    height: 30%;
-    object-fit: cover;
   }
   /*main*/
   .restaurant {
@@ -98,14 +94,19 @@
   .btn_new {
     margin-left: 70%;
   }
-  .restaurant a {
-    width: 35%;
+  .restaurant .link {
+    width: 38%;
     margin-bottom: 30px;
-    margin-left: 120px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .restaurant .margin {
+    margin-left: 130px;
   }
   .card .btn_new {
     margin-left: 70%;
   }
+  /*restaurant page */
   .dish {
     flex-direction: row;
     justify-content: flex-start;
@@ -147,14 +148,15 @@
   .footer_logo {
     position: absolute;
     margin-left: 85%;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-left: 20px;
   }
   .footer_list {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    padding-top: 30px;
     justify-content: flex-end;
-    padding-right: 170px;
+    padding-right: 200px;
   }
   .footer .element_list {
     margin: 20px;

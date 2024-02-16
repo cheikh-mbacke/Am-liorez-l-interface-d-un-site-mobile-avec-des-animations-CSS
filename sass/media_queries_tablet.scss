@@ -1,64 +1,87 @@
-
 @import "utils";
 /*home page*/
 
 @media (min-width:768px)and (max-width:1024px) {
 
-/*loader*/
-.loader { 
-@include font-size-loader;
-&_spinner {
-    margin-left: 38%;
-margin-top: 25%;
-}
+  /*loader*/
+  .loader {
+    @include font-size-loader;
 
-&_icon{
-margin-left: 45%;
-margin-top: 32%;
-}
-
-
-&_logo {  
-  margin-left: 30%;
-  margin-top: 50%;
-    padding-top: 20px;
-}
-}
-
-
-/*main container*/
-
-.main-container { max-width: 1024px;}
-
-/*navbar*/
-.navbar {  &_btn {    width: 25%;} }
-
-/*functioning section*/
-/*.width100{ width: 90%;}*/
-
-.functioning_number { display: flex;}
-
-/*restaurant cards*/
-@include restaurant-cards;
-.restaurant { 
-    
-width: 100%;
-a { width: 50%;}
-}
-.card { width: 90%;
-margin-left: 20px;
-}
-.card .btn_new { margin-left: 70%;}
-/*restaurant page*/
-/*header + img*/
-@include header_restaurant_page;
-
-/*menu section*/
-
-.menu {
-   @include menu;
-        .dish_price {
-        padding-left: 80px;}
-     
-}    
+    &_spinner {
+      margin-left: 38%;
+      margin-top: 25%;
     }
+
+    &_icon {
+      margin-left: 45%;
+      margin-top: 32%;
+    }
+
+
+    &_logo {
+      margin-left: 30%;
+      margin-top: 50%;
+      padding-top: 20px;
+    }
+  }
+
+
+  /*main container*/
+
+  .main-container {
+    max-width: 1024px;
+  }
+
+  /*navbar*/
+  .navbar {
+    &_btn {
+      width: 25%;
+    }
+    .first_title {
+      font-size: 40px;
+  }
+  }
+
+  /*functioning section*/
+  /*.width100{ width: 90%;}*/
+
+  .functioning_number {
+    display: flex;
+  }
+
+  /*restaurant cards*/
+  @include restaurant-cards;
+
+  .restaurant {
+
+    width: 100%;
+
+    .link {
+      width: 50%;
+    }
+  }
+
+  .card {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .card .btn_new {
+    margin-left: 70%;
+  }
+
+  /*restaurant page*/
+  /*header + img*/
+  @include header_restaurant_page;
+
+  /*menu section*/
+
+  .menu {
+    @include menu;
+
+    .dish_price {
+      padding-left: 80px;
+    }
+
+  }
+}

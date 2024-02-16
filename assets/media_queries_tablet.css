@@ -65,6 +65,9 @@
   .navbar_btn {
     width: 25%;
   }
+  .navbar .first_title {
+    font-size: 40px;
+  }
   /*functioning section*/
   /*.width100{ width: 90%;}*/
   .functioning_number {
@@ -82,7 +85,7 @@
   .restaurant {
     width: 100%;
   }
-  .restaurant a {
+  .restaurant .link {
     width: 50%;
   }
   .card {
@@ -96,10 +99,6 @@
   /*header + img*/
   .header {
     background-color: white;
-  }
-  .image_restaurant {
-    height: 30%;
-    object-fit: cover;
   }
   /*menu section*/
   .menu .menu {
