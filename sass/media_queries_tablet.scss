@@ -46,7 +46,7 @@
   }
 
   /*functioning section*/
-  /*.width100{ width: 90%;}*/
+ 
 
   .functioning_number {
     display: flex;
@@ -54,24 +54,14 @@
 
   /*restaurant cards*/
   @include restaurant-cards;
+  .card_container { width: 45%;
+  margin-left: 30px;}
 
-  .restaurant {
 
-    width: 100%;
+.heart { bottom: 50px;}
 
-    .link {
-      width: 50%;
-    }
-  }
 
-  .card {
-    width: 90%;
-    margin-left: 20px;
-  }
 
-  .card .btn_new {
-    margin-left: 70%;
-  }
 
   /*restaurant page*/
   /*header + img*/

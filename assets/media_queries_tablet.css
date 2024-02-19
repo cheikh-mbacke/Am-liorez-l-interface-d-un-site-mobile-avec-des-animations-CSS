@@ -72,7 +72,6 @@
     width: 90%;
   }
   /*functioning section*/
-  /*.width100{ width: 90%;}*/
   .functioning_number {
     display: flex;
   }
@@ -82,21 +81,22 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
-  .restaurant {
-    width: 100%;
-  }
   .restaurant .link {
-    width: 50%;
-  }
-  .card {
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page*/
   /*header + img*/

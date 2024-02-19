@@ -104,6 +104,9 @@ width: 100%;
 }
 
 /* section cards restaurants*/
+.card_container {
+    position: relative;
+}
 .cards_restaurant {
     background-color: #F6F6F6;
     padding-top: 20px;
@@ -171,12 +174,26 @@ width: 100%;
 }
 
 /*heart checkbox*/
-
+/*.card-container {
+    position: relative; 
+    
+    .heart {
+      position: absolute; 
+      top: 10px; 
+      right: 10px; 
+    }
+  }*/
+.card_container { position: relative;}
+.heart { position: absolute;
+    bottom: 25px;
+    left: 70%;
+}
+  
 .heart-label {
     padding-top: 15px;
     font-size: 25px;
     padding-right: 30px;
-    position: relative;
+   /* position: relative;*/
     cursor: pointer;
 }
 

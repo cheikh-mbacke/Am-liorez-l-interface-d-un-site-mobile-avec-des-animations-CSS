@@ -65,20 +65,14 @@ margin-right: 15px;
     /*main*/
 
     @include restaurant-cards;
-
-    .restaurant .link {
-        width: 38%;
-        margin-bottom: 30px;
-        margin-left: 0;
-        margin-right: 50px;
-    }
-    .restaurant .margin { 
+.card_container { width: 40%;}
+  
+    .margin { 
         margin-left: 130px;
     }
+    .heart { bottom: 50px;}
 
-    .card .btn_new {
-        margin-left: 70%;
-    }
+
 /*restaurant page */
     .dish {
         flex-direction: row;

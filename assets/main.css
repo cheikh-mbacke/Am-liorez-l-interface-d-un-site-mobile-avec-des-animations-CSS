@@ -166,20 +166,24 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
   .restaurant .link {
-    width: 38%;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: 0;
     margin-right: 50px;
-  }
-  .restaurant .margin {
-    margin-left: 130px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 40%;
+  }
+  .margin {
+    margin-left: 130px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page */
   .dish {
@@ -311,7 +315,6 @@
     width: 90%;
   }
   /*functioning section*/
-  /*.width100{ width: 90%;}*/
   .functioning_number {
     display: flex;
   }
@@ -321,21 +324,22 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
-  .restaurant {
-    width: 100%;
-  }
   .restaurant .link {
-    width: 50%;
-  }
-  .card {
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page*/
   /*header + img*/
@@ -454,6 +458,10 @@
 }
 
 /* section cards restaurants*/
+.card_container {
+  position: relative;
+}
+
 .cards_restaurant {
   background-color: #F6F6F6;
   padding-top: 20px;
@@ -507,11 +515,30 @@
 }
 
 /*heart checkbox*/
+/*.card-container {
+    position: relative; 
+
+    .heart {
+      position: absolute; 
+      top: 10px; 
+      right: 10px; 
+    }
+  }*/
+.card_container {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  bottom: 25px;
+  left: 70%;
+}
+
 .heart-label {
   padding-top: 15px;
   font-size: 25px;
   padding-right: 30px;
-  position: relative;
+  /* position: relative;*/
   cursor: pointer;
 }
 
@@ -629,20 +656,24 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
   .restaurant .link {
-    width: 38%;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: 0;
     margin-right: 50px;
-  }
-  .restaurant .margin {
-    margin-left: 130px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 40%;
+  }
+  .margin {
+    margin-left: 130px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page */
   .dish {
@@ -774,7 +805,6 @@
     width: 90%;
   }
   /*functioning section*/
-  /*.width100{ width: 90%;}*/
   .functioning_number {
     display: flex;
   }
@@ -784,21 +814,22 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
-  .restaurant {
-    width: 100%;
-  }
   .restaurant .link {
-    width: 50%;
-  }
-  .card {
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page*/
   /*header + img*/
@@ -961,20 +992,24 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
   .restaurant .link {
-    width: 38%;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: 0;
     margin-right: 50px;
-  }
-  .restaurant .margin {
-    margin-left: 130px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 40%;
+  }
+  .margin {
+    margin-left: 130px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page */
   .dish {
@@ -1733,20 +1768,24 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
   .restaurant .link {
-    width: 38%;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: 0;
     margin-right: 50px;
-  }
-  .restaurant .margin {
-    margin-left: 130px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 40%;
+  }
+  .margin {
+    margin-left: 130px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page */
   .dish {
@@ -2128,7 +2167,6 @@ a {
     width: 90%;
   }
   /*functioning section*/
-  /*.width100{ width: 90%;}*/
   .functioning_number {
     display: flex;
   }
@@ -2138,21 +2176,22 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
-  .restaurant {
-    width: 100%;
-  }
   .restaurant .link {
-    width: 50%;
-  }
-  .card {
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page*/
   /*header + img*/
@@ -2277,20 +2316,24 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
   .restaurant .link {
-    width: 38%;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: 0;
     margin-right: 50px;
-  }
-  .restaurant .margin {
-    margin-left: 130px;
+    display: block;
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 40%;
+  }
+  .margin {
+    margin-left: 130px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page */
   .dish {

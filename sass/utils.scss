@@ -55,8 +55,16 @@ $grey-color: #F6F6F6;
 @mixin restaurant-cards {
     .restaurant {display: flex;
     flex-direction: row;
-flex-wrap: wrap;}
- .btn_new { margin-left: 70%;}
+flex-wrap: wrap;
+.link {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+    display: block;
+}
+}
+.card .btn_new { margin-left: 70%;}
 }
 /*restaurant page, header*/
 @mixin header_restaurant_page {
