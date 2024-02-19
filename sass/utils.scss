@@ -1,85 +1,124 @@
+$main_color: #9356dc;
+$second_color: #ff79da;
+$tertiary-color: #99e2d0;
+$form-color: #eaeaea;
+$shadow-color-header: #00000040;
+$grey-color: #f6f6f6;
 
-$main_color:#9356DC ;
-$second_color:#FF79DA ;
-$tertiary-color:#99E2D0;
-$form-color: #EAEAEA;
-$shadow-color-header:#00000040;
-$grey-color: #F6F6F6;
+.font_weight700 {
+  font-weight: 700;
+}
+.font_weight500 {
+  font-weight: 500;
+}
+.font_weight300 {
+  font-weight: 300;
+}
+.font_weight_bold {
+  font-weight: bold;
+}
+.white {
+  color: white;
+}
+.width100 {
+  width: 100%;
+}
+.border_none {
+  border: none;
+}
+.flex {
+  display: flex;
+}
 
-.font_weight700 {  font-weight: 700;}
-.font_weight500{   font-weight: 500;}
-.font_weight300{   font-weight: 300;}
-.font_weight_bold { font-weight: bold;}
-.white { color: white;}
-.width100 { width: 100%;}
-.border_none {  border: none;}
-.flex { display: flex;}
-
-
-@mixin button { 
-    border-radius: 25px;
-    height: 50px;
-    background: linear-gradient(193.33deg, #{$main_color} -11.44%, #{$second_color} 123.93%);
-    width: 50%;
-    box-shadow: 0px 4px 10px 0px $shadow-color-header;
+@mixin button {
+  border-radius: 25px;
+  height: 50px;
+  background: linear-gradient(
+    193.33deg,
+    #{$main_color} -11.44%,
+    #{$second_color} 123.93%
+  );
+  width: 50%;
+  box-shadow: 0px 4px 10px 0px $shadow-color-header;
 }
 
 @mixin hidden-checkbox {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 @mixin heart-icons {
-    opacity: 0.5;
-    position: absolute;
+  opacity: 0.5;
+  position: absolute;
 }
 
-
 @mixin heart-icons-filled {
-   
-        color: transparent;
-        background: linear-gradient(180deg, #{$second_color} -11.44%, #{$main_color} 123.93%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-    }
+  color: transparent;
+  background: linear-gradient(
+    180deg,
+    #{$second_color} -11.44%,
+    #{$main_color} 123.93%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
 /*mixin medias_queries tablet and desktop*/
 /*loader*/
 @mixin font-size-loader {
-    &_spinner {font-size: 180px;}
-    &_icon, &_logo { font-size: 60px;}
-    
+  &_spinner {
+    font-size: 180px;
+  }
+  &_icon,
+  &_logo {
+    font-size: 60px;
+  }
 }
 /*restaurant cards home page and restaurant page*/
 @mixin restaurant-cards {
-    .restaurant {display: flex;
+  .restaurant {
+    display: flex;
     flex-direction: row;
-flex-wrap: wrap;
-.link {
-    width: 100%;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 50px;
-    display: block;
-}
-}
-.card .btn_new { margin-left: 70%;}
+    flex-wrap: wrap;
+    .link {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 0;
+      margin-right: 50px;
+      display: block;
+    }
+  }
+  .card .btn_new {
+    margin-left: 70%;
+  }
 }
 /*restaurant page, header*/
 @mixin header_restaurant_page {
-    .header { background-color: white;}
- }
+  .header {
+    background-color: white;
+  }
+}
 
 /*menu*/
 @mixin menu {
-    .menu { width: 80%;
-    margin-left: 10%;}
-    .restaurant { justify-content: center;}
-    .menu_section {margin-left: 12%;
-        width: 4%;}
-        .dish { padding-left: 10%;
-        width: 80%;}
-        .order { width: 25%;
-            margin-left: 35%;}
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .restaurant {
+    justify-content: center;
+  }
+  .menu_section {
+    margin-left: 12%;
+    width: 4%;
+  }
+  .dish {
+    padding-left: 10%;
+    width: 80%;
+  }
+  .order {
+    width: 25%;
+    margin-left: 35%;
+  }
 }

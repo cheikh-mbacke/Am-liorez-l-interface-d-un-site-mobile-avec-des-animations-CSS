@@ -129,12 +129,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .btn_new {
-    margin-left: 70%;
-  }
-  .card_container {
-    width: 40%;
-  }
   .restaurant .link {
     width: 100%;
     margin-bottom: 30px;
@@ -142,11 +136,17 @@
     margin-right: 50px;
     display: block;
   }
+  .card .btn_new {
+    margin-left: 70%;
+  }
+  .card_container {
+    width: 40%;
+  }
   .margin {
     margin-left: 130px;
   }
-  .card .btn_new {
-    margin-left: 70%;
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page */
   .dish {
@@ -184,7 +184,7 @@
     float: right;
   }
   .footer {
-    height: 125px;
+    height: 130px;
     padding-bottom: 0;
   }
   .footer_logo {
@@ -278,7 +278,6 @@
     width: 90%;
   }
   /*functioning section*/
-  /*.width100{ width: 90%;}*/
   .functioning_number {
     display: flex;
   }
@@ -287,13 +286,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .btn_new {
-    margin-left: 70%;
-  }
-  .card_container {
-    width: 45%;
-    margin-left: 30px;
   }
   .restaurant .link {
     width: 100%;
@@ -304,6 +296,13 @@
   }
   .card .btn_new {
     margin-left: 70%;
+  }
+  .card_container {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .heart {
+    bottom: 50px;
   }
   /*restaurant page*/
   /*header + img*/
@@ -341,13 +340,13 @@
   text-align: center;
 }
 .navbar .form_container {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.2509803922), 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .navbar .form_container input.value {
   font-size: 16px;
   padding-left: 10px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   width: 109px;
 }
 .navbar .first_title {
@@ -365,7 +364,7 @@
 .navbar_btn {
   border-radius: 25px;
   height: 50px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   width: 50%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   display: inline-block;
@@ -385,9 +384,9 @@
 .functioning_number {
   padding: 6px 10px;
   font-size: 13px;
-  border: solid 1.5px #9356DC;
+  border: solid 1.5px #9356dc;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   position: absolute;
   margin-top: 25px;
 }
@@ -400,7 +399,7 @@
 .functioning_btn {
   margin-bottom: 10px;
   border-radius: 20px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   height: 70px;
   margin-left: 10px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -418,7 +417,7 @@
   margin-right: 20px;
 }
 .functioning_icon--purple {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 /* section cards restaurants*/
@@ -427,7 +426,7 @@
 }
 
 .cards_restaurant {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -445,7 +444,7 @@
 .card .btn_new {
   width: 80px;
   height: 30px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   margin-left: 250px;
   margin-top: 10px;
@@ -479,15 +478,6 @@
 }
 
 /*heart checkbox*/
-/*.card-container {
-    position: relative; 
-
-    .heart {
-      position: absolute; 
-      top: 10px; 
-      right: 10px; 
-    }
-  }*/
 .card_container {
   position: relative;
 }
@@ -518,7 +508,7 @@
 
 .fa-solid.fa-heart.heartFilled {
   color: transparent;
-  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
+  background: linear-gradient(180deg, #ff79da -11.44%, #9356dc 123.93%);
   -webkit-background-clip: text;
   background-clip: text;
   position: absolute;

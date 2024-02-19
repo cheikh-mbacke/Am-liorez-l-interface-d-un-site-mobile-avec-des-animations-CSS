@@ -1,127 +1,111 @@
 /*home page*/
 @import "utils";
-@media (min-width:1025px) and (max-width:1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /*navbar*/
+  .loader {
+    @include font-size-loader;
 
-    /*navbar*/
-    .loader {
-        @include font-size-loader;
-
-        &_spinner {
-            margin-left: 40%;
-            margin-top: 15%;
-        }
-
-        &_icon {
-            margin-left: 45%;
-            margin-top: 20%;
-        }
-
-        &_logo {
-            margin-left: 35%;
-            margin-top: 30%;
-            padding-top: 10px;
-        }
+    &_spinner {
+      margin-left: 40%;
+      margin-top: 15%;
     }
 
-    /*navbar*/
-   
-
-    .navbar {
-        &_btn {
-            width: 15%;
-        }
-        .first_title {
-            font-size: 40px;
-        }
+    &_icon {
+      margin-left: 45%;
+      margin-top: 20%;
     }
 
-    .section_title {
-        padding-left: 150px;
-        width: 90%;
+    &_logo {
+      margin-left: 35%;
+      margin-top: 30%;
+      padding-top: 10px;
+    }
+  }
+
+  /*navbar*/
+
+  .navbar {
+    &_btn {
+      width: 15%;
+    }
+    .first_title {
+      font-size: 40px;
+    }
+  }
+
+  .section_title {
+    padding-left: 150px;
+    width: 90%;
+  }
+
+  /*functioning section*/
+  .functioning {
+    width: 90%;
+
+    .functioning_btn {
+      width: 30%;
+      margin-right: 15px;
     }
 
-    /*functioning section*/
-    .functioning {
-        width: 90%;
-
-        .functioning_btn {
-            width: 30%;
-margin-right: 15px;
-        }
-
-        .functioning_button {
-            margin-left: 120px;
-        }
-
-        &_p {
-            display: flex;
-        }
+    .functioning_button {
+      margin-left: 120px;
     }
 
-    
-    /*header + img*/
-    @include header_restaurant_page;
-
-    /*main*/
-
-    @include restaurant-cards;
-.card_container { width: 40%;}
-  
-    .margin { 
-        margin-left: 130px;
+    &_p {
+      display: flex;
     }
-    .heart { bottom: 50px;}
+  }
 
+  /*header + img*/
+  @include header_restaurant_page;
 
-/*restaurant page */
-    .dish {
-        flex-direction: row;
-        justify-content: flex-start;
+  /*main*/
+
+  @include restaurant-cards;
+  .card_container {
+    width: 40%;
+  }
+
+  .margin {
+    margin-left: 130px;
+  }
+  .heart {
+    bottom: 50px;
+  }
+
+  /*menu section*/
+
+  .menu {
+    @include menu;
+
+    .dish_price {
+      padding-right: 25px;
+      margin-left: auto;
+      float: right;
     }
+  }
 
-    .dish_btn {
-        width: 322px;
-        margin-left: 30px;
-        margin-right: 20px;
-    }
+  .footer {
+    height: 130px;
+    padding-bottom: 0;
 
-    /*menu section*/
-
-    .menu {
-        @include menu;
-
-        .dish_price {
-            padding-right: 25px;
-            margin-left: auto;
-            float: right;
-        }
-
-    }
-
-    .footer {
-        height: 125px;
-        padding-bottom: 0;
-
-        &_logo {
-            position: absolute;
-            margin-left: 85%;
-            padding-top: 60px;
-padding-left: 20px;
-
-        }
-
-        &_list {
-            display: flex;
-            flex-direction: row;
-            padding-top: 30px;
-            justify-content: flex-end;
-            padding-right: 200px;
-        }
-
-        .element_list {
-            margin: 20px;
-
-        }
+    &_logo {
+      position: absolute;
+      margin-left: 85%;
+      padding-top: 60px;
+      padding-left: 20px;
     }
 
+    &_list {
+      display: flex;
+      flex-direction: row;
+      padding-top: 30px;
+      justify-content: flex-end;
+      padding-right: 200px;
+    }
+
+    .element_list {
+      margin: 20px;
+    }
+  }
 }

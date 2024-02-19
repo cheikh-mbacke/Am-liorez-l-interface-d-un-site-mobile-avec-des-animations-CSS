@@ -111,16 +111,6 @@
   .heart {
     bottom: 50px;
   }
-  /*restaurant page */
-  .dish {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .dish_btn {
-    width: 322px;
-    margin-left: 30px;
-    margin-right: 20px;
-  }
   /*menu section*/
   .menu .menu {
     width: 80%;
@@ -147,7 +137,7 @@
     float: right;
   }
   .footer {
-    height: 125px;
+    height: 130px;
     padding-bottom: 0;
   }
   .footer_logo {

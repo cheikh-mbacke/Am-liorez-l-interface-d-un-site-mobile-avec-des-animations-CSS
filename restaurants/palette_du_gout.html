@@ -1,168 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La palette du goût</title>
+    <script
+      src="https://kit.fontawesome.com/2ee12d41d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@400;600;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La palette du goût</title>
-  <script src="https://kit.fontawesome.com/2ee12d41d6.js" crossorigin="anonymous"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@400;600;700&family=Shrikhand&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+  </head>
 
-  <link rel="stylesheet" href="../assets/styles_restaurants.css">
-</head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header_logo"
+          src="../assets/images/logo/ohmyfood.png"
+          alt="logo OhMyFood"
+        />
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="header">
-      <img class="header_logo" src="../assets/images/logo/ohmyfood.png" alt="logo OhMyFood">
+    <div class="image">
+      <img
+        class="image_restaurant width100 animated"
+        src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="photo d'un plat"
+      />
     </div>
-  </header>
 
-  <div class="image">
-    <img class="image_restaurant width100 animated" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-      alt="photo d'un plat">
-  </div>
-
-
-
-  <main class="menu ">
-    <div class="restaurant flex">
-      <h1 class="restaurant_name">La palette du goût</h1>
-      <input type="checkbox" id="heartCheckbox" class="hidden-checkbox">
-      <label for="heartCheckbox" class="heart-label">
-        <i class="fa-regular fa-heart restautant_heart"></i>
-        <i class="fa-solid fa-heart heartFilled"></i>
-      </label>
-    </div>
-    <!--Starters-->
-    <h2 class="menu_section font_weight300"> ENTREES</h2>
-    <div class="dish animated">
-
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content ">Fricassée d'escargots</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Au piment d'Espelette </h4>
-          <div class="dish_price">25€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
-        </div>
-
+    <main class="menu">
+      <div class="restaurant flex">
+        <h1 class="restaurant_name">La palette du goût</h1>
+        <input type="checkbox" id="heartCheckbox" class="hidden-checkbox" />
+        <label for="heartCheckbox" class="heart-label">
+          <i class="fa-regular fa-heart restautant_heart"></i>
+          <i class="fa-solid fa-heart heartFilled"></i>
+        </label>
       </div>
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Foie gras de canard mi-cuit</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Et ses copeaux de truffe noire </h4>
-          <div class="dish_price">35€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+      <!--Starters-->
+      <h2 class="menu_section font_weight300">ENTREES</h2>
+      <div class="dish animated">
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Fricassée d'escargots
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Au piment d'Espelette
+            </h4>
+            <div class="dish_price">25€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
-      </div>
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-
-          <h3 class="dish_title font_weight_bold dish_content">Oeuf au plat</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Assaisonné à la truffe sur nid de caviar </h4>
-          <div class="dish_price">20€</div>
-
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Foie gras de canard mi-cuit
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Et ses copeaux de truffe noire
+            </h4>
+            <div class="dish_price">35€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Oeuf au plat
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Assaisonné à la truffe sur nid de caviar
+            </h4>
+            <div class="dish_price">20€</div>
 
-      </div>
-    </div>
-    <!--dish-->
-    <h2 class="menu_section"> PLATS</h2>
-    <div class="dish animated2">
-
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Filet de bœuf aux herbes</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Accompagné de sa ribambelle de légumes </h4>
-          <div class="dish_price">40€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
       </div>
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Parmentier de queue de bœuf</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">À la truffe noire sur sa purée de panais </h4>
-        <div class="dish_price">35€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+      <!--dish-->
+      <h2 class="menu_section">PLATS</h2>
+      <div class="dish animated2">
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Filet de bœuf aux herbes
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Accompagné de sa ribambelle de légumes
+            </h4>
+            <div class="dish_price">40€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
-      </div>
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Filet de turbot</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Aux agrumes </h4>
-          <div class="dish_price">44€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Parmentier de queue de bœuf
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              À la truffe noire sur sa purée de panais
+            </h4>
+            <div class="dish_price">35€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </div>
-    <!--desserts-->
-    <h2 class="menu_section">DESSERTS</h2>
-    <div class="dish animated3">
-
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Paris-Brest</h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Revisité </h4>
-          <div class="dish_price">18€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Filet de turbot
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Aux agrumes
+            </h4>
+            <div class="dish_price">44€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
       </div>
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Macaron au chocolat d'exception </h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Et glace à la vanille de Madagascar </h4>
-          <div class="dish_price">22€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+      <!--desserts-->
+      <h2 class="menu_section">DESSERTS</h2>
+      <div class="dish animated3">
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Paris-Brest
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">Revisité</h4>
+            <div class="dish_price">18€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
-      </div>
-      <div class="dish_button flex">
-        <div tabindex="0" class="dish_btn width100 border_none">
-
-          <h3 class="dish_title font_weight_bold dish_content">Mousse au chocolat </h3>
-          <h4 class="dish_subtitle font_weight300 dish_content">Au piment d'Espelette et à la truffe noire</h4>
-          <div class="dish_price">23€</div>
-          <div class="progress"><i class="fa-solid fa-circle-check logo"></i></div>
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Macaron au chocolat d'exception
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Et glace à la vanille de Madagascar
+            </h4>
+            <div class="dish_price">22€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
         </div>
-
+        <div class="dish_button flex">
+          <div tabindex="0" class="dish_btn width100 border_none">
+            <h3 class="dish_title font_weight_bold dish_content">
+              Mousse au chocolat
+            </h3>
+            <h4 class="dish_subtitle font_weight300 dish_content">
+              Au piment d'Espelette et à la truffe noire
+            </h4>
+            <div class="dish_price">23€</div>
+            <div class="progress">
+              <i class="fa-solid fa-circle-check logo"></i>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--button-->
-    <button class="order border_none ">
+      <!--button-->
+      <button class="order border_none">
         <span class="order_p font_weight500">Commander</span>
-    </button>
-  </main>
+      </button>
+    </main>
 
-  <!--footer-->
-  <footer class="footer">
-
-    <span class="footer_logo">ohmyfood</span>
-    <ul class="footer_list">
-      <li class="element_list"><i class="fa-solid fa-utensils footer_icon"></i>Proposer un restaurant</li>
-      <li class="element_list"><i class="fa-solid fa-handshake-angle footer_icon"></i>Devenir partenaire</li>
-      <li class="element_list">Mentions légales</li>
-      <li class="element_list">Contact</li>
-    </ul>
-  </footer>
-
-
-</body>
-
+    <!--footer-->
+    <footer class="footer">
+      <span class="footer_logo">ohmyfood</span>
+      <ul class="footer_list">
+        <li class="element_list">
+          <i class="fa-solid fa-utensils footer_icon"></i>Proposer un restaurant
+        </li>
+        <li class="element_list">
+          <i class="fa-solid fa-handshake-angle footer_icon"></i>Devenir
+          partenaire
+        </li>
+        <li class="element_list">Mentions légales</li>
+        <li class="element_list">Contact</li>
+      </ul>
+    </footer>
+  </body>
 </html>
