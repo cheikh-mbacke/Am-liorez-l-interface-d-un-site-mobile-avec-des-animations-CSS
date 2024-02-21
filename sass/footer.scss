@@ -1,32 +1,31 @@
 /* footer */
 .footer {
-    background-color: #353535;
-    padding: 22px 25px 22px 25px;
-    &_logo {
-        font-size: 18px;
-        color: white;
-        font-family: 'shrikhand';
-        font-weight: 500;
-       
-    }
+  background-color: #353535;
+  padding: 22px 25px 22px 25px;
+  &_logo {
+    font-size: 18px;
+    color: white;
+    font-family: "shrikhand";
+    font-weight: 500;
+  }
 
-    &_list {
-        list-style: none;
-        color: white;
-        font-size: 16px;
-        padding-left: 0;
-        
-          a { color: white;}
-    }
+  &_list {
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 0;
 
-    .element_list {
-        padding-bottom: 10px;
-     
+    a {
+      color: white;
     }
+  }
 
-    &_icon {
-        margin-right: 15px;
-        width: 11px;
-    }
+  .element_list {
+    padding-bottom: 10px;
+  }
 
+  &_icon {
+    margin-right: 15px;
+    width: 11px;
+  }
 }

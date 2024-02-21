@@ -94,6 +94,9 @@
     margin-top: 30%;
     padding-top: 10px;
   }
+  .loader_content {
+    top: auto;
+  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -137,26 +140,17 @@
     display: block;
   }
   .card .btn_new {
-    margin-left: 70%;
+    margin-left: 75%;
   }
   .card_container {
     width: 40%;
   }
   .margin {
     margin-left: 130px;
+    margin-right: 50px;
   }
   .heart {
     bottom: 50px;
-  }
-  /*restaurant page */
-  .dish {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .dish_btn {
-    width: 322px;
-    margin-left: 30px;
-    margin-right: 20px;
   }
   /*menu section*/
   .menu .menu {
@@ -242,7 +236,7 @@
 /*restaurant page, header*/
 /*menu*/
 /*home page*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   /*loader*/
   .loader_spinner {
     font-size: 180px;
@@ -260,8 +254,11 @@
   }
   .loader_logo {
     margin-left: 30%;
-    margin-top: 50%;
-    padding-top: 20px;
+    margin-top: 45%;
+    padding-top: 10px;
+  }
+  .loader_content {
+    top: auto;
   }
   /*main container*/
   .main-container {
@@ -295,7 +292,7 @@
     display: block;
   }
   .card .btn_new {
-    margin-left: 70%;
+    margin-left: 75%;
   }
   .card_container {
     width: 45%;
@@ -397,7 +394,7 @@
   margin-bottom: 50px;
 }
 .functioning_btn {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 20px;
   background-color: #f6f6f6;
   height: 70px;

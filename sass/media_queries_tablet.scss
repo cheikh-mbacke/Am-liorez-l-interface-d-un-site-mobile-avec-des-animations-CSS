@@ -1,7 +1,7 @@
 @import "utils";
 /*home page*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   /*loader*/
   .loader {
     @include font-size-loader;
@@ -18,8 +18,11 @@
 
     &_logo {
       margin-left: 30%;
-      margin-top: 50%;
-      padding-top: 20px;
+      margin-top: 45%;
+      padding-top: 10px;
+    }
+    &_content {
+      top: auto;
     }
   }
 

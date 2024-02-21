@@ -1,50 +1,66 @@
 /*menu restaurant page*/
 @keyframes menu {
-    0% {
-        opacity: 0;
-    transform: translateY(50px);}
-    100% { 
-opacity: 1;
-transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*heart*/
 @keyframes heartColor {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes emptyHeart {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 /*animation to the right of the dishes*/
 @keyframes progress {
-    0% { width: 0%;}
-    100% {width: 60px;}
-    }
-    @keyframes price { 
-    0% {   transform: translateX(0); }
-    100% {   transform: translateX(-50%); }
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60px;
+  }
+}
+@keyframes price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 @keyframes progressReverse {
-    0% { width: 60px;}
-    100% { width: 0%;}
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 0%;
+  }
 }
 @keyframes priceReverse {
-    0% { transform: translateX(-50%);}
-    100% {transform: translateX(0);}
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

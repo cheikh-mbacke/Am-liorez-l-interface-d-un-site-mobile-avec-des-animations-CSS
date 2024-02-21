@@ -1,38 +1,43 @@
 /*loader*/
-@keyframes loaderSpinner{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% { transform: rotate(360deg); opacity: 0;}
-    
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
 }
-@keyframes loader{
-    0% {
-       opacity: 1;
-    }
-    50% {opacity: 1;}
-    100% { opacity: 0;
-    visibility: hidden;}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /*heart*/
 @keyframes heartColor {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes emptyHeart {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
