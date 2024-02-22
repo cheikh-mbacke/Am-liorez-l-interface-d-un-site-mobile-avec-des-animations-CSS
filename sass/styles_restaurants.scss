@@ -9,7 +9,7 @@
 /* arrow header*/
 .header_arrow {
   position: absolute;
-  padding-right: 330px;
+  margin-right: 330px;
   font-size: 25px;
   color: #353535;
 }
@@ -36,7 +36,7 @@
 
 .heart-label {
   font-size: 30px;
-  padding-left: 35px;
+  margin-left: 35px;
   padding-top: 20px;
   opacity: 0.8;
   cursor: pointer;
@@ -62,7 +62,6 @@
   padding-top: 20px;
   position: relative;
   margin-top: 210px;
-  /* width: 100%;*/
 
   &_section {
     font-size: 16px;

@@ -161,7 +161,7 @@
     justify-content: center;
   }
   .menu .menu_section {
-    margin-left: 12%;
+    margin-left: 11%;
     width: 4%;
   }
   .menu .dish {
@@ -315,7 +315,7 @@
     justify-content: center;
   }
   .menu .menu_section {
-    margin-left: 12%;
+    margin-left: 11%;
     width: 4%;
   }
   .menu .dish {
@@ -488,8 +488,7 @@
 .heart-label {
   padding-top: 15px;
   font-size: 25px;
-  padding-right: 30px;
-  /* position: relative;*/
+  margin-right: 30px;
   cursor: pointer;
 }
 
