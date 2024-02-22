@@ -5,6 +5,15 @@
 @import "keyframes_restaurants_page";
 @import "footer";
 @import "layout";
+
+/* arrow header*/
+.header_arrow {
+  position: absolute;
+  padding-right: 330px;
+  font-size: 25px;
+  color: #353535;
+}
+
 /*image*/
 .image {
   &_restaurant {

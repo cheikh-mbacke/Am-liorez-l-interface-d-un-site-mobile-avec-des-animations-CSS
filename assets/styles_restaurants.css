@@ -124,7 +124,7 @@
     justify-content: center;
   }
   .menu .menu_section {
-    margin-left: 12%;
+    margin-left: 11%;
     width: 4%;
   }
   .menu .dish {
@@ -278,7 +278,7 @@
     justify-content: center;
   }
   .menu .menu_section {
-    margin-left: 12%;
+    margin-left: 11%;
     width: 4%;
   }
   .menu .dish {
@@ -457,7 +457,7 @@
     justify-content: center;
   }
   .menu .menu_section {
-    margin-left: 12%;
+    margin-left: 11%;
     width: 4%;
   }
   .menu .dish {
@@ -809,6 +809,14 @@ a {
   .header_logo {
     width: 20%;
   }
+}
+
+/* arrow header*/
+.header_arrow {
+  position: absolute;
+  padding-right: 330px;
+  font-size: 25px;
+  color: #353535;
 }
 
 /*image*/
