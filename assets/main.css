@@ -1365,7 +1365,7 @@ a {
 /* arrow header*/
 .header_arrow {
   position: absolute;
-  margin-right: 330px;
+  margin-right: 90%;
   font-size: 25px;
   color: #353535;
 }
