@@ -110,7 +110,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;
@@ -587,7 +587,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;
@@ -920,7 +920,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;
@@ -1332,13 +1332,12 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 768px;
+  max-width: 100%;
   box-sizing: border-box;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .main-container {
     min-width: 1024px;
-    max-width: 1440px;
   }
 }
 
@@ -1356,7 +1355,7 @@ a {
 .header_logo {
   width: 50%;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .header_logo {
     width: 20%;
   }
@@ -1629,13 +1628,12 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 768px;
+  max-width: 100%;
   box-sizing: border-box;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .main-container {
     min-width: 1024px;
-    max-width: 1440px;
   }
 }
 
@@ -1653,7 +1651,7 @@ a {
 .header_logo {
   width: 50%;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .header_logo {
     width: 20%;
   }
@@ -1698,7 +1696,7 @@ a {
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;
@@ -2243,7 +2241,7 @@ a {
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;

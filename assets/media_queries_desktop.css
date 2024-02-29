@@ -36,7 +36,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;
@@ -124,7 +124,7 @@
     justify-content: center;
   }
   .menu .menu_section {
-    margin-left: 12%;
+    margin-left: 11%;
     width: 4%;
   }
   .menu .dish {
