@@ -1,3 +1,34 @@
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -34,4 +65,5 @@
 /*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
-/*menu*//*# sourceMappingURL=utils.css.map */
+/*menu*/
+/* checkbox heart *//*# sourceMappingURL=utils.css.map */

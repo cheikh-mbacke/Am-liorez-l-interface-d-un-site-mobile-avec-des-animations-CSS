@@ -1,5 +1,36 @@
 /*menu animation*/
 /*home page*/
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -37,7 +68,8 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+/* checkbox heart */
+@media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
     font-size: 180px;
@@ -162,6 +194,37 @@
     margin: 20px;
   }
 }
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -199,6 +262,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 /*menu restaurant page*/
 @keyframes menu {
   0% {
@@ -212,14 +276,6 @@
 }
 /*heart*/
 @keyframes heartColor {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes emptyHeart {
   0% {
     opacity: 0;
   }
@@ -291,7 +347,7 @@
 }
 .restaurant .hidden-checkbox:not(:checked) + .heart-label {
   opacity: 1;
-  animation: emptyHeart 1s ease;
+  animation: heartColor 1s ease;
 }
 
 /*animation to the right of the dishes*/

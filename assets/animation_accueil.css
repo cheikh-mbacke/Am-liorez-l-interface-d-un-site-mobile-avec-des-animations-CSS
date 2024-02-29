@@ -1,0 +1,128 @@
+/*loader*/
+/*Loader*/
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.font_weight700 {
+  font-weight: 700;
+}
+
+.font_weight500 {
+  font-weight: 500;
+}
+
+.font_weight300 {
+  font-weight: 300;
+}
+
+.font_weight_bold {
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.border_none {
+  border: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/*mixin medias_queries tablet and desktop*/
+/*loader*/
+/*restaurant cards home page and restaurant page*/
+/*restaurant page, header*/
+/*menu*/
+/* checkbox heart */
+.loader {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: loader 3s both;
+  z-index: 1;
+}
+.loader_content {
+  font-size: 40px;
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+.loader_spinner {
+  animation: loaderSpinner 3s linear both;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 40%;
+  font-size: 120px;
+  color: white;
+}
+.loader_icon {
+  color: #ff79da;
+  margin-left: 45%;
+  margin-top: 50%;
+}
+.loader_logo {
+  color: white;
+  font-family: "shrikhand";
+  font-weight: 500;
+  margin-left: 20%;
+  margin-top: 70%;
+  padding-top: 20px;
+}
+
+/*navbar button */
+.navbar_btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+/*heart card*/
+.restaurant .hidden-checkbox:checked + .heart-label .fa-regular.fa-heart {
+  opacity: 0;
+}
+.restaurant .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled {
+  visibility: visible;
+  opacity: 1;
+  animation: heartColor 1s ease;
+}
+.restaurant .hidden-checkbox:not(:checked) + .heart-label {
+  opacity: 1;
+  animation: heartColor 1s ease;
+}/*# sourceMappingURL=animation_accueil.css.map */

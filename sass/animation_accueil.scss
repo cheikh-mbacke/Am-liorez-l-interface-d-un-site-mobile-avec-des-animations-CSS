@@ -1,6 +1,6 @@
 /*loader*/
 /*Loader*/
-
+@import "utils";
 .loader {
   background: linear-gradient(
     193.33deg,
@@ -30,7 +30,7 @@
     color: white;
   }
 
-  &_icon {
+  &_icon { 
     color: $second_color;
     margin-left: 45%;
     margin-top: 50%;
@@ -60,19 +60,4 @@
 
 /*heart card*/
 
-.card {
-  .hidden-checkbox:checked + .heart-label .fa-regular.fa-heart {
-    opacity: 0;
-  }
-
-  .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled {
-    visibility: visible;
-    opacity: 1;
-    animation: heartColor 1s ease;
-  }
-
-  .hidden-checkbox:not(:checked) + .heart-label {
-    opacity: 1;
-    animation: emptyHeart 1s ease;
-  }
-}
+@include checkboxHeart;

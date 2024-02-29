@@ -1,3 +1,4 @@
+@import "keyframes_accueil";
 $main_color: #9356dc;
 $second_color: #ff79da;
 $tertiary-color: #99e2d0;
@@ -122,3 +123,22 @@ $grey-color: #f6f6f6;
     margin-left: 35%;
   }
 }
+/* checkbox heart */
+ @mixin checkboxHeart {
+  .restaurant {
+    .hidden-checkbox:checked + .heart-label .fa-regular.fa-heart {
+      opacity: 0;
+    }
+  
+    .hidden-checkbox:checked + .heart-label .fa-solid.fa-heart.heartFilled {
+      visibility: visible;
+      opacity: 1;
+      animation: heartColor 1s ease;
+    }
+  
+    .hidden-checkbox:not(:checked) + .heart-label {
+      opacity: 1;
+      animation: heartColor 1s ease;
+    }
+  }
+ }
