@@ -561,7 +561,7 @@
   height: 30px;
   background-color: #99e2d0;
   position: absolute;
-  margin-left: 250px;
+  right: 5%;
   margin-top: 10px;
   border-radius: 2px;
 }
