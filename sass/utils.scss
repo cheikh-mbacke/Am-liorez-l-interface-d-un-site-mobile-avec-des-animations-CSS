@@ -66,16 +66,7 @@ $grey-color: #f6f6f6;
   opacity: 0;
 }
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
-@mixin font-size-loader {
-  &_spinner {
-    font-size: 180px;
-  }
-  &_icon,
-  &_logo {
-    font-size: 60px;
-  }
-}
+
 /*restaurant cards home page and restaurant page*/
 @mixin restaurant-cards {
   .restaurant {

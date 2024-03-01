@@ -1,4 +1,35 @@
 /*home page*/
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -36,30 +67,8 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 @media (min-width: 1025px) {
-  /*navbar*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 40%;
-    margin-top: 15%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 20%;
-  }
-  .loader_logo {
-    margin-left: 35%;
-    margin-top: 30%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -84,6 +93,9 @@
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    margin-top: 5px;
   }
   /*header + img*/
   .header {

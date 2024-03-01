@@ -64,7 +64,6 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -75,35 +74,32 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation: loader 3s both;
   z-index: 1;
 }
-.loader_content {
-  font-size: 40px;
-  display: flex;
-  position: absolute;
-  top: 20%;
-}
 .loader_spinner {
-  animation: loaderSpinner 3s linear both;
   position: absolute;
-  margin-left: 35%;
-  margin-top: 40%;
-  font-size: 120px;
+  animation: loaderSpinner 3s linear both;
+  font-size: 125px;
   color: white;
+  margin-bottom: 90px;
 }
 .loader_icon {
   color: #ff79da;
-  margin-left: 45%;
-  margin-top: 50%;
+  font-size: 40px;
+  top: 90px;
+  padding-bottom: 70px;
+  position: relative;
 }
 .loader_logo {
   color: white;
   font-family: "shrikhand";
   font-weight: 500;
-  margin-left: 20%;
-  margin-top: 70%;
   padding-top: 20px;
+  font-size: 50px;
 }
 
 /*navbar button */

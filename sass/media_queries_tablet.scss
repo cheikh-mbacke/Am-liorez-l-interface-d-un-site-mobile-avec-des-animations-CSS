@@ -2,30 +2,7 @@
 /*home page*/
 
 @media (min-width: 768px) and (max-width: 1025px) {
-  /*loader*/
-  .loader {
-    @include font-size-loader;
-
-    &_spinner {
-      margin-left: 38%;
-      margin-top: 25%;
-    }
-
-    &_icon {
-      margin-left: 45%;
-      margin-top: 32%;
-    }
-
-    &_logo {
-      margin-left: 30%;
-      margin-top: 45%;
-      padding-top: 10px;
-    }
-    &_content {
-      top: auto;
-    }
-  }
-
+ 
   /*main container*/
 
   .main-container {
@@ -44,6 +21,7 @@
   .section_title {
     width: 90%;
   }
+  
 
   /*functioning section*/
 

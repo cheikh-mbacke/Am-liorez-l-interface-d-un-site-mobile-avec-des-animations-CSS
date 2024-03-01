@@ -62,7 +62,6 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -131,7 +130,6 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -201,35 +199,11 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 @media (min-width: 1025px) {
-  /*navbar*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 40%;
-    margin-top: 15%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 20%;
-  }
-  .loader_logo {
-    margin-left: 35%;
-    margin-top: 30%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -254,6 +228,9 @@
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    margin-top: 5px;
   }
   /*header + img*/
   .header {
@@ -395,36 +372,12 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 /*home page*/
 @media (min-width: 768px) and (max-width: 1025px) {
-  /*loader*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 38%;
-    margin-top: 25%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 32%;
-  }
-  .loader_logo {
-    margin-left: 30%;
-    margin-top: 45%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*main container*/
   .main-container {
     max-width: 1024px;
@@ -742,35 +695,11 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 @media (min-width: 1025px) {
-  /*navbar*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 40%;
-    margin-top: 15%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 20%;
-  }
-  .loader_logo {
-    margin-left: 35%;
-    margin-top: 30%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -795,6 +724,9 @@
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    margin-top: 5px;
   }
   /*header + img*/
   .header {
@@ -936,36 +868,12 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 /*home page*/
 @media (min-width: 768px) and (max-width: 1025px) {
-  /*loader*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 38%;
-    margin-top: 25%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 32%;
-  }
-  .loader_logo {
-    margin-left: 30%;
-    margin-top: 45%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*main container*/
   .main-container {
     max-width: 1024px;
@@ -1100,7 +1008,6 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -1171,35 +1078,11 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 @media (min-width: 1025px) {
-  /*navbar*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 40%;
-    margin-top: 15%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 20%;
-  }
-  .loader_logo {
-    margin-left: 35%;
-    margin-top: 30%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -1224,6 +1107,9 @@
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    margin-top: 5px;
   }
   /*header + img*/
   .header {
@@ -1365,7 +1251,6 @@
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -1621,6 +1506,7 @@ a {
   margin-right: 90%;
   font-size: 25px;
   color: #353535;
+  height: 30px;
 }
 
 /*image*/
@@ -1843,7 +1729,6 @@ a {
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -1854,35 +1739,32 @@ a {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation: loader 3s both;
   z-index: 1;
 }
-.loader_content {
-  font-size: 40px;
-  display: flex;
-  position: absolute;
-  top: 20%;
-}
 .loader_spinner {
-  animation: loaderSpinner 3s linear both;
   position: absolute;
-  margin-left: 35%;
-  margin-top: 40%;
-  font-size: 120px;
+  animation: loaderSpinner 3s linear both;
+  font-size: 125px;
   color: white;
+  margin-bottom: 90px;
 }
 .loader_icon {
   color: #ff79da;
-  margin-left: 45%;
-  margin-top: 50%;
+  font-size: 40px;
+  top: 90px;
+  padding-bottom: 70px;
+  position: relative;
 }
 .loader_logo {
   color: white;
   font-family: "shrikhand";
   font-weight: 500;
-  margin-left: 20%;
-  margin-top: 70%;
   padding-top: 20px;
+  font-size: 50px;
 }
 
 /*navbar button */
@@ -2038,35 +1920,11 @@ a {
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 @media (min-width: 1025px) {
-  /*navbar*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 40%;
-    margin-top: 15%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 20%;
-  }
-  .loader_logo {
-    margin-left: 35%;
-    margin-top: 30%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -2091,6 +1949,9 @@ a {
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    margin-top: 5px;
   }
   /*header + img*/
   .header {
@@ -2232,7 +2093,6 @@ a {
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
@@ -2480,36 +2340,12 @@ a {
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 /*home page*/
 @media (min-width: 768px) and (max-width: 1025px) {
-  /*loader*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 38%;
-    margin-top: 25%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 32%;
-  }
-  .loader_logo {
-    margin-left: 30%;
-    margin-top: 45%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*main container*/
   .main-container {
     max-width: 1024px;
@@ -2645,35 +2481,11 @@ a {
 }
 
 /*mixin medias_queries tablet and desktop*/
-/*loader*/
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
 /* checkbox heart */
 @media (min-width: 1025px) {
-  /*navbar*/
-  .loader_spinner {
-    font-size: 180px;
-  }
-  .loader_icon, .loader_logo {
-    font-size: 60px;
-  }
-  .loader_spinner {
-    margin-left: 40%;
-    margin-top: 15%;
-  }
-  .loader_icon {
-    margin-left: 45%;
-    margin-top: 20%;
-  }
-  .loader_logo {
-    margin-left: 35%;
-    margin-top: 30%;
-    padding-top: 10px;
-  }
-  .loader_content {
-    top: auto;
-  }
   /*navbar*/
   .navbar_btn {
     width: 15%;
@@ -2698,6 +2510,9 @@ a {
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    margin-top: 5px;
   }
   /*header + img*/
   .header {

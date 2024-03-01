@@ -1,4 +1,35 @@
 /*home page*/
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -36,6 +67,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 @media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
@@ -84,6 +116,10 @@
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    height: 30px;
+    margin-top: 5px;
   }
   /*header + img*/
   .header {
@@ -161,6 +197,37 @@
     margin: 20px;
   }
 }
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -198,6 +265,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 /*home page*/
 @media (min-width: 768px) and (max-width: 1025px) {
   /*loader*/
@@ -293,6 +361,37 @@
     padding-left: 80px;
   }
 }
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -330,8 +429,40 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 /*menu animation*/
 /*home page*/
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -369,6 +500,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 @media (min-width: 1025px) {
   /*navbar*/
   .loader_spinner {
@@ -417,6 +549,10 @@
   }
   .functioning_p {
     display: flex;
+  }
+  .header_arrow {
+    height: 30px;
+    margin-top: 5px;
   }
   /*header + img*/
   .header {
@@ -494,6 +630,37 @@
     margin: 20px;
   }
 }
+/*loader*/
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*heart*/
+@keyframes heartColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .font_weight700 {
   font-weight: 700;
 }
@@ -531,6 +698,7 @@
 /*restaurant cards home page and restaurant page*/
 /*restaurant page, header*/
 /*menu*/
+/* checkbox heart */
 /*menu restaurant page*/
 @keyframes menu {
   0% {
@@ -540,23 +708,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-/*heart*/
-@keyframes heartColor {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes emptyHeart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 /*animation to the right of the dishes*/
@@ -623,7 +774,7 @@
 }
 .restaurant .hidden-checkbox:not(:checked) + .heart-label {
   opacity: 1;
-  animation: emptyHeart 1s ease;
+  animation: heartColor 1s ease;
 }
 
 /*animation to the right of the dishes*/
@@ -692,23 +843,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-/*heart*/
-@keyframes heartColor {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes emptyHeart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 /*animation to the right of the dishes*/
@@ -816,6 +950,7 @@ a {
   margin-right: 90%;
   font-size: 25px;
   color: #353535;
+  height: 30px;
 }
 
 /*image*/

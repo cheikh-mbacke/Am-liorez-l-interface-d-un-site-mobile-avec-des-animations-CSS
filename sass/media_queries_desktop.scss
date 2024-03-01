@@ -2,30 +2,6 @@
 @import "utils";
 @media (min-width: 1025px) {
   /*navbar*/
-  .loader {
-    @include font-size-loader;
-
-    &_spinner {
-      margin-left: 40%;
-      margin-top: 15%;
-    }
-
-    &_icon {
-      margin-left: 45%;
-      margin-top: 20%;
-    }
-
-    &_logo {
-      margin-left: 35%;
-      margin-top: 30%;
-      padding-top: 10px;
-    }
-    &_content {
-      top: auto;
-    }
-  }
-
-  /*navbar*/
 
   .navbar {
     &_btn {
@@ -58,7 +34,9 @@
       display: flex;
     }
   }
-
+.header_arrow { 
+  margin-top: 5px
+}
   /*header + img*/
   @include header_restaurant_page;
 
