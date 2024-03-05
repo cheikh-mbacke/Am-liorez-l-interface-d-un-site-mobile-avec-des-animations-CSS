@@ -468,7 +468,7 @@
   margin-left: 35px;
   margin-right: 20px;
 }
-.functioning_icon--purple {
+.functioning_btn:hover .functioning_icon {
   color: #9356dc;
 }
 

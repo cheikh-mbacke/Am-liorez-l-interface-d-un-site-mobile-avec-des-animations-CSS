@@ -101,8 +101,9 @@
     margin-right: 20px;
   }
 
-  &_icon--purple {
-    color: $main_color;
+  &_btn:hover {
+    .functioning_icon{
+    color: $main_color;}
   }
 }
  
