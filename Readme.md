@@ -1,4 +1,21 @@
-La mission est de développer un site mobile first qui répertorie les menus de restaurants gastronomiques. Ce site web permettra aux utilisateurs de gagner du temps en commandant leur plat à l'avance, directement sur leur smartphone.
-J'ai écris ce code en me basant sur les maquettes et prototypes du site mis à ma disposition, ainsi que sur le brief créatif élaboré avec Paul, le CTO.
-Les langages utilisés pour ce projet sont le HTML et le Sass.
-Travaillant sur VS Code, j'ai utilisé une extension afin de compiler le code Sass en CSS, il s'agit de Live Sass Compiler. Il ne faut pas oublier de configurer cette extension en utilisant le bon port de sortie dans ses paramètres json, ici il s'agit de "assets".
+# 🍛 Projet -OhMyFood
+
+Développement d'un site qui répertorie les menus de restaurants gastronomiques.
+
+##
+
+### Prérequis :
+
+- [Node.js](https://nodejs.org/en)
+- [SASS](https://sass-lang.com/)
+
+### Objectif du projet :
+
+- Développé un site en HTML, CSS & SASS.
+- Développé d'abord selon la méthodologie Mobile First, puis pour les ordinateurs de bureau.
+- Implémentation d'animations CSS.
+- Contient une animation de chargement de la page d'accueil.
+
+▶ [Démo](https://cheikh-mbacke.github.io/Am-liorez-l-interface-d-un-site-mobile-avec-des-animations-CSS/) </br> </br>
+
+![overview](https://github.com/cheikh-mbacke/Am-liorez-l-interface-d-un-site-mobile-avec-des-animations-CSS/blob/main/assets/images/overview.png)
